@@ -24,6 +24,10 @@
 		97F7CB9C2C19E121005F9AAD /* UIApllicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7CB9B2C19E121005F9AAD /* UIApllicationExtensions.swift */; };
 		97F7CB9E2C19E205005F9AAD /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7CB9D2C19E205005F9AAD /* UIViewExtensions.swift */; };
 		97F7CBA02C19F305005F9AAD /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7CB9F2C19F304005F9AAD /* QRScannerController.swift */; };
+		97F7CBA32C1A06B0005F9AAD /* PaymentConfirmationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7CBA22C1A06B0005F9AAD /* PaymentConfirmationController.swift */; };
+		97F7CBA62C1A075C005F9AAD /* PaymentConfirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7CBA52C1A075C005F9AAD /* PaymentConfirmation.swift */; };
+		97F7CBAA2C1A1153005F9AAD /* StackViewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7CBA92C1A1153005F9AAD /* StackViewHelpers.swift */; };
+		97F7CBAC2C1A1678005F9AAD /* Navbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7CBAB2C1A1678005F9AAD /* Navbar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,10 @@
 		97F7CB9B2C19E121005F9AAD /* UIApllicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApllicationExtensions.swift; sourceTree = "<group>"; };
 		97F7CB9D2C19E205005F9AAD /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		97F7CB9F2C19F304005F9AAD /* QRScannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
+		97F7CBA22C1A06B0005F9AAD /* PaymentConfirmationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentConfirmationController.swift; sourceTree = "<group>"; };
+		97F7CBA52C1A075C005F9AAD /* PaymentConfirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentConfirmation.swift; sourceTree = "<group>"; };
+		97F7CBA92C1A1153005F9AAD /* StackViewHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewHelpers.swift; sourceTree = "<group>"; };
+		97F7CBAB2C1A1678005F9AAD /* Navbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navbar.swift; sourceTree = "<group>"; };
 		DF5C776B06CB40C17538E650 /* Pods-CaseStudy-BNI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaseStudy-BNI.release.xcconfig"; path = "Target Support Files/Pods-CaseStudy-BNI/Pods-CaseStudy-BNI.release.xcconfig"; sourceTree = "<group>"; };
 		EE4B8786DFACFF3CC59A3AAE /* Pods_CaseStudy_BNI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaseStudy_BNI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -91,7 +99,8 @@
 		97F7CB6B2C19C84B005F9AAD /* CaseStudy-BNI */ = {
 			isa = PBXGroup;
 			children = (
-				97F7CB812C19D1EF005F9AAD /* Helpers */,
+				97F7CBA42C1A0727005F9AAD /* Models */,
+				97F7CB812C19D1EF005F9AAD /* Utilities */,
 				97F7CB802C19CD20005F9AAD /* Modules */,
 				97F7CB6C2C19C84B005F9AAD /* AppDelegate.swift */,
 				97F7CB6E2C19C84B005F9AAD /* SceneDelegate.swift */,
@@ -112,12 +121,13 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		97F7CB812C19D1EF005F9AAD /* Helpers */ = {
+		97F7CB812C19D1EF005F9AAD /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				97F7CBA82C1A1144005F9AAD /* Helpers */,
 				97F7CB822C19D1F4005F9AAD /* Extensions */,
 			);
-			path = Helpers;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		97F7CB822C19D1F4005F9AAD /* Extensions */ = {
@@ -152,6 +162,7 @@
 			children = (
 				97F7CB882C19D61E005F9AAD /* Button.swift */,
 				97F7CB8E2C19DC64005F9AAD /* MainTabBarController.swift */,
+				97F7CBAB2C1A1678005F9AAD /* Navbar.swift */,
 			);
 			path = "Reusable UI";
 			sourceTree = "<group>";
@@ -178,6 +189,7 @@
 		97F7CB922C19DEB1005F9AAD /* ScannerQR */ = {
 			isa = PBXGroup;
 			children = (
+				97F7CBA12C1A067F005F9AAD /* PaymentConfirmation */,
 				97F7CB9F2C19F304005F9AAD /* QRScannerController.swift */,
 				97F7CB932C19DEC5005F9AAD /* ScannerQRController.swift */,
 			);
@@ -198,6 +210,30 @@
 				97F7CB992C19DF73005F9AAD /* HistoryTransactionController.swift */,
 			);
 			path = HistoryTransaction;
+			sourceTree = "<group>";
+		};
+		97F7CBA12C1A067F005F9AAD /* PaymentConfirmation */ = {
+			isa = PBXGroup;
+			children = (
+				97F7CBA22C1A06B0005F9AAD /* PaymentConfirmationController.swift */,
+			);
+			path = PaymentConfirmation;
+			sourceTree = "<group>";
+		};
+		97F7CBA42C1A0727005F9AAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				97F7CBA52C1A075C005F9AAD /* PaymentConfirmation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		97F7CBA82C1A1144005F9AAD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				97F7CBA92C1A1153005F9AAD /* StackViewHelpers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		FE3B6FADCF06E962620E43BB /* Pods */ = {
@@ -326,13 +362,17 @@
 				97F7CB892C19D61E005F9AAD /* Button.swift in Sources */,
 				97F7CB712C19C84B005F9AAD /* HomepageViewController.swift in Sources */,
 				97F7CB982C19DF45005F9AAD /* HomeAccountController.swift in Sources */,
+				97F7CBAC2C1A1678005F9AAD /* Navbar.swift in Sources */,
+				97F7CBA32C1A06B0005F9AAD /* PaymentConfirmationController.swift in Sources */,
 				97F7CBA02C19F305005F9AAD /* QRScannerController.swift in Sources */,
 				97F7CB9E2C19E205005F9AAD /* UIViewExtensions.swift in Sources */,
 				97F7CB912C19DCFC005F9AAD /* MainTabCaseStudy1Controller.swift in Sources */,
+				97F7CBAA2C1A1153005F9AAD /* StackViewHelpers.swift in Sources */,
 				97F7CB842C19D232005F9AAD /* UIStackViewExtensions.swift in Sources */,
 				97F7CB8F2C19DC64005F9AAD /* MainTabBarController.swift in Sources */,
 				97F7CB9C2C19E121005F9AAD /* UIApllicationExtensions.swift in Sources */,
 				97F7CB8B2C19D90C005F9AAD /* NSLayoutConstraintExtensions.swift in Sources */,
+				97F7CBA62C1A075C005F9AAD /* PaymentConfirmation.swift in Sources */,
 				97F7CB942C19DEC5005F9AAD /* ScannerQRController.swift in Sources */,
 				97F7CB9A2C19DF73005F9AAD /* HistoryTransactionController.swift in Sources */,
 				97F7CB6D2C19C84B005F9AAD /* AppDelegate.swift in Sources */,

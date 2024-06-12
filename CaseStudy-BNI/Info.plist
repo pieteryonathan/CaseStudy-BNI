@@ -4,6 +4,8 @@
 <dict>
 	<key>NSCameraUsageDescription</key>
 	<string>We need access your camera for scanning QR code.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need access yout photos for detect QR code.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

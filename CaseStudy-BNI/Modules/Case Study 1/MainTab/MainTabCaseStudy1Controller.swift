@@ -16,7 +16,7 @@ class MainTabCaseStudy1Controller: MainTabBarController {
         imageView.image = UIImage(named: "ic_scan_qr")
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
-//        imageViewAddTrip.addTapAction(self, action: #selector(onTapAddTrip))
+        imageView.addTapAction(self, action: #selector(scanQR))
         return imageView
     }()
      
@@ -48,8 +48,9 @@ class MainTabCaseStudy1Controller: MainTabBarController {
     }
     
     @objc func scanQR(_ sender: Any) {
-//        let controller = CreateNewTripController()
-//        controller.embedInNav().showModal(on: self)
+        let qrScanner = QRScannerController()
+        qrScanner.modalPresentationStyle = .pageSheet
+        present(qrScanner, animated: true, completion: nil)
     }
     
     // MARK: - Declaration Menu

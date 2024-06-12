@@ -27,8 +27,13 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
         view.spacing = 24
         view.isLayoutMarginsRelativeArrangement = true
         view.insetsLayoutMarginsFromSafeArea = false
-        view.layoutMargins = .init(top: 24, left: 24, bottom: 16, right: 24)
+        view.layoutMargins = .init(top: 24, left: 24, bottom: 32, right: 24)
         return view
+    }()
+    
+    lazy var navBar: NavbarClose = {
+        let navBar = NavbarClose(self)
+        return navBar
     }()
     
     lazy var viewSpacerTop: UIView = {
@@ -37,7 +42,7 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
         viewX.setContentHuggingPriority(.defaultHigh, for: .vertical)
         return viewX
     }()
-        
+    
     lazy var labelScan: UILabel = {
         let labelScan = UILabel()
         labelScan.textAlignment = .center
@@ -63,6 +68,14 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
         return viewX
     }()
     
+    lazy var stackViewButton: UIStackView = {
+        let view = UIStackView()
+        view.axis = .horizontal
+        view.spacing = 24
+        return view
+    }()
+    
+    
     lazy var buttonFlash: UIButton = {
         // Create a flashlight button
         let buttonFlash = UIButton()
@@ -74,26 +87,35 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
         view.addSubview(buttonFlash)
         
         buttonFlash.setPreferredSymbolConfiguration(UIImage.SymbolConfiguration(pointSize: 48), forImageIn: .normal)
-
+        
         
         // Add constraints for the flash button
         NSLayoutConstraint.activate([
             buttonFlash.widthAnchor.constraint(equalToConstant: 48),
-            buttonFlash.heightAnchor.constraint(equalToConstant: 48),
-            buttonFlash.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -48),
-            buttonFlash.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
+            buttonFlash.heightAnchor.constraint(equalToConstant: 48)
         ])
         return buttonFlash
     }()
-
     
-    lazy var labelFlash: UILabel = {
-        let labelFlash = UILabel()
-        labelFlash.textAlignment = .center
-        labelFlash.textColor = .white
-        labelFlash.text = "Flash"
-        labelFlash.font = .systemFont(ofSize: 12, weight: .regular)
-        return labelFlash
+    lazy var buttonGallery: UIButton = {
+        // Create a flashlight button
+        let buttonFlash = UIButton()
+        buttonFlash.translatesAutoresizingMaskIntoConstraints = false
+        buttonFlash.setImage(UIImage(systemName: "photo.circle.fill"), for: .normal)
+        buttonFlash.setImage(UIImage(systemName: "photo.circle"), for: .selected)
+        buttonFlash.tintColor = .orange
+        buttonFlash.addTarget(self, action: #selector(openGallery), for: .touchUpInside)
+        view.addSubview(buttonFlash)
+        
+        buttonFlash.setPreferredSymbolConfiguration(UIImage.SymbolConfiguration(pointSize: 48), forImageIn: .normal)
+        
+        
+        // Add constraints for the flash button
+        NSLayoutConstraint.activate([
+            buttonFlash.widthAnchor.constraint(equalToConstant: 48),
+            buttonFlash.heightAnchor.constraint(equalToConstant: 48)
+        ])
+        return buttonFlash
     }()
     
     // MARK: - VARIABLE DECLARATION
@@ -102,8 +124,15 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
     var isFlashOn = false
     var isQRCodeDetected = false
     var backToHome: ((QRScannerController) -> Void)?
-
+    
     // MARK: - OVERRIDE
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        isQRCodeDetected = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -119,14 +148,17 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
         
         NSLayoutConstraint.addSubviewAndCreateArroundEqualConstraint(in: safeView, toView: self.view)
         
-        safeView.addArrangedSubViews(views: [contentView])
-
-        contentView.addArrangedSubViews(views: [viewSpacerTop, labelScan, imageViewFrameQR, viewSpacer, buttonFlash, labelFlash])
+        safeView.addArrangedSubViews(views: [navBar, contentView])
+        
+        contentView.addArrangedSubViews(views: [viewSpacerTop, labelScan, imageViewFrameQR, stackViewButton, viewSpacer])
+        contentView.setCustomSpacing(32, after: imageViewFrameQR)
+        
+        stackViewButton.addArrangedSubViews(views: [buttonFlash, buttonGallery])
         
         contentView.setCustomSpacing(8, after: buttonFlash)
         
         viewSpacerTop.heightAnchor.constraint(equalTo: viewSpacer.heightAnchor, constant: -48).isActive = true
-                
+        
         // Get the back camera
         guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else {
             print("Failed to get the camera device")
@@ -181,18 +213,27 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
         // Get the metadata object
         if let metadataObj = metadataObjects.first as? AVMetadataMachineReadableCodeObject {
             if metadataObj.type == .qr {
+                
                 isQRCodeDetected = true
                 if let qrCodeString = metadataObj.stringValue {
-                    print("Result: \(qrCodeString)")
+                    let components = qrCodeString.components(separatedBy: ".")
+                    // [nameBank] [idPayment] [nameOfMerchant] [totalOfTransaction]
+                    let paymentConfirmation = PaymentConfirmation(idPayment: components[1], nameBank: components[0], nameOfMerchant: components[2], totalOfTransaction: Int(components[3]))
+                    let controller = PaymentConfirmationController(paymentConfirmation: paymentConfirmation)
+                    controller.modalPresentationStyle = .fullScreen
+                    present(controller, animated: true, completion: nil)
                 }
             }
         }
     }
     
     // MARK: - ACTION
-        
-    @objc func doDismiss() {
-        
+    
+    @objc func openGallery() {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .photoLibrary
+        present(imagePicker, animated: true, completion: nil)
     }
     
     @objc func toggleFlashlight() {
@@ -201,7 +242,7 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
             print("Failed to access the camera device")
             return
         }
-
+        
         if device.hasTorch {
             do {
                 try device.lockForConfiguration()
@@ -218,4 +259,33 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
             print("Flashlight is not available")
         }
     }
+    
+    // MARK: - UIIMAGE PICKER DELEGATE
+    
+    // UIImagePickerControllerDelegate method to handle image selection
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        
+        guard let image = info[.originalImage] as? UIImage,
+            let imageData = image.jpegData(compressionQuality: 1.0) else {
+                return
+        }
+        
+        if let detector = CIDetector(ofType: CIDetectorTypeQRCode, context: nil, options: [CIDetectorAccuracy: CIDetectorAccuracyHigh]) {
+            let imageDetector = CIImage(data: imageData)
+            let features = detector.features(in: imageDetector!)
+            
+            if let firstFeature = features.first as? CIQRCodeFeature,
+                let qrCodeString = firstFeature.messageString {
+                print("Result: \(qrCodeString)")
+//                labelResult.text = "Detected QR code: \(qrCodeString)"
+//                imageViewResult.image = image
+                // Process the QR code data as needed
+            } else {
+//                labelResult.text = "No QR code is detected"
+//                imageViewResult.image = nil
+            }
+        }
+    }
+    
 }
