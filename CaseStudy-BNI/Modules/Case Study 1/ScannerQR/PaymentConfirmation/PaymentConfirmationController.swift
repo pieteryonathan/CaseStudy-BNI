@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class PaymentConfirmationController: UIViewController {
     
@@ -204,6 +205,7 @@ class PaymentConfirmationController: UIViewController {
     private lazy var buttonPay: PrimaryButton = {
         let buttonX = PrimaryButton()
         buttonX.setData(title: "Pay", buttonColor: .orange)
+        buttonX.addTapAction(self, action: #selector(onPayTapped))
         return buttonX
     }()
     
@@ -226,6 +228,7 @@ class PaymentConfirmationController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.setNavigationBarHidden(true, animated: true)
         view.backgroundColor = .white
         setupView()
         setState()
@@ -271,6 +274,16 @@ class PaymentConfirmationController: UIViewController {
     }
     
     // MARK: - ACTION
+    
+    @objc private func onPayTapped(_ sender: Any) {
+        SVProgressHUD.show()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [unowned self] in
+            SVProgressHUD.dismiss()
+            let controller = PaymentCompletionController()
+            controller.pushReplace(on: self)
+        }
+    }
+    
     @objc private func onBackTapped(_ sender: Any) {
         self.dismiss(animated: true)
     }

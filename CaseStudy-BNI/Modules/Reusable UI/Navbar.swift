@@ -62,7 +62,7 @@ class NavbarBack: UIView {
     }
     
     @objc private func onBackTapped(_ sender: Any) {
-        controller.dismiss(animated: true)
+        controller.popOrDismiss(animated: true)
     }
 }
 
@@ -95,11 +95,7 @@ class NavbarBacknClose: NavbarBack {
     }
     
     @objc private func onCloseTapped(_ sender: Any) {
-        if let navigationController = controller.navigationController {
-               navigationController.popToRootViewController(animated: true)
-           } else {
-               dismissAllViewControllers()
-           }
+        self.dismissAllViewControllers()
     }
     
     func dismissAllViewControllers() {

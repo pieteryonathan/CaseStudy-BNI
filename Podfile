@@ -7,6 +7,7 @@ target 'CaseStudy-BNI' do
   use_frameworks!
 
   pod 'FSPagerView' 
+  pod 'SVProgressHUD'
 
 end
 

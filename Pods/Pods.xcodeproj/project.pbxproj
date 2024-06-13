@@ -7,73 +7,122 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		175EE1CD5A077F0D0CD945F192DB43A8 /* Pods-CaseStudy-BNI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DD0BA190B7C71B40D13AE6E27FF38F9 /* Pods-CaseStudy-BNI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C7D4498F3088FF36DC2B819BD1E50F6 /* FSPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD6CDD416CDD62E164451B4E18CF7A0 /* FSPagerView.swift */; };
-		2CDFF8E6837218C11BA62ECA130F04B2 /* FSPagerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 883B498B63505BC557AB391BF282C8EF /* FSPagerView-dummy.m */; };
-		2E4A914423BA1B263C96C3BBC43E2245 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
-		5CBC6AB9E8116DD3775640EE84B1115A /* FSPageViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9620C112F0330566F4B89C4B962D2FEC /* FSPageViewLayout.swift */; };
-		703A418E02207897BB49C435FA58DE41 /* FSPagerViewLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755B6D47324B150431591FA0B0FF57AE /* FSPagerViewLayoutAttributes.swift */; };
-		7399F0854271981516AA79727A0A06C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		8C5AB15E7F0E4B6FA56F699BB7A733F3 /* FSPagerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F83B1F343C53DB55E4DD551557F9B0 /* FSPagerCollectionView.swift */; };
-		91611428D06F5E61CECF70A53E6DA6C6 /* FSPagerViewObjcCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DE77834550077BF8D096E05313230C3 /* FSPagerViewObjcCompat.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A12870662400416B05E8BE097C7D865C /* Pods-CaseStudy-BNI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D968B4E65CCED09E13218E4D128587 /* Pods-CaseStudy-BNI-dummy.m */; };
-		C22A0BDBA4358C1379BA7C77C74A3C17 /* FSPageViewTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD61E8F7E5A3F9C223CB3A8D35FA74BA /* FSPageViewTransformer.swift */; };
-		C2F7000B5AA8195E5A0D843DE1AE1554 /* FSPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D20917481C129BD31786C0800A5E4A5 /* FSPageControl.swift */; };
-		C3B1FE26EA29DF87A804A32F4C40F34E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		CA9916421BECF24658FE7EF7E97B6E90 /* FSPagerViewObjcCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = C06835C7510750D7D8C6B0781317C0AA /* FSPagerViewObjcCompat.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		CE2C6FD104092EA3F2F0A357C72460A8 /* FSPagerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE8A7EA2E88F1E59A16CEBBE8E70EBD9 /* FSPagerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F2C36AFACE9A34F67EDE675FAAC846FA /* FSPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2F113F60774AE19D8129AA504CFF62 /* FSPagerViewCell.swift */; };
+		0335018FAC1AD7BC453F8F9A68CDABC4 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4CD899478B751DB59246F44D57CFF4 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		151C0967BB3061765C5CCCF1BB90B9F0 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06531DCCDF89A375869CB3758BE71E25 /* SVIndefiniteAnimatedView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		19FE9BC7F25FF5D48B6B2B3B520D4D47 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 17D873242B3DA61DD314FF1F2BF79190 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C7D4498F3088FF36DC2B819BD1E50F6 /* FSPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E77BD84549B56F186986D76DF30B6F0 /* FSPagerView.swift */; };
+		2CDFF8E6837218C11BA62ECA130F04B2 /* FSPagerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B37E36523AFF8638FEA7F0D0151F6F44 /* FSPagerView-dummy.m */; };
+		2E4A914423BA1B263C96C3BBC43E2245 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE2AD31F00D0EF9C522211BDDBF6C3C /* UIKit.framework */; };
+		2E84CD435150EDA1356EE23EAB3CE5E7 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 71094F90C1045F0755A0C1411C814105 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DD3AA72B9084A109B88A1781BFD5365 /* Pods-CaseStudy-BNI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D968B4E65CCED09E13218E4D128587 /* Pods-CaseStudy-BNI-dummy.m */; };
+		42C0009DD3DB75C3C1BC854ECD5A4AB8 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A08F8621FE02BE1E2558DC99BCC9397A /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		522C3A21334AD1AFD3C12FBCA62A675F /* Pods-CaseStudy-BNI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DD0BA190B7C71B40D13AE6E27FF38F9 /* Pods-CaseStudy-BNI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C1882C3220FE99428DE2D961FE7C369 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9185295E61D9F64F72E4A11C2105D290 /* SVProgressAnimatedView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5CBC6AB9E8116DD3775640EE84B1115A /* FSPageViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFEF010B46FD2AB34EE5E36323F06F8 /* FSPageViewLayout.swift */; };
+		5CCFEFC8D4424B1132A586F2F15BF455 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */; };
+		6896DFB74F3F686051682B127D231EE7 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCC110CF717FCA0908D236CD00ABA76 /* SVProgressHUD-dummy.m */; };
+		703A418E02207897BB49C435FA58DE41 /* FSPagerViewLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB1C9057C27436D1452F6A455C718F /* FSPagerViewLayoutAttributes.swift */; };
+		7399F0854271981516AA79727A0A06C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */; };
+		82FE3B046FEA46F2BDFE7FB0E9D7CBAD /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3776A12CADFD7D6E659C97DB44732369 /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C5AB15E7F0E4B6FA56F699BB7A733F3 /* FSPagerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB852D9CC650906F4D75E0444D00315 /* FSPagerCollectionView.swift */; };
+		91611428D06F5E61CECF70A53E6DA6C6 /* FSPagerViewObjcCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B890F7E1559322BE602FACAC27AC0FA /* FSPagerViewObjcCompat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92A81311D8592CB3D907E9DA59023E38 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = EB160604BA387C340AFF2760268D3D53 /* PrivacyInfo.xcprivacy */; };
+		98455F4176C861F9E33D36892A932684 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */; };
+		C22A0BDBA4358C1379BA7C77C74A3C17 /* FSPageViewTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0ACDE09C96DBFE5F9E7653D6A153F3 /* FSPageViewTransformer.swift */; };
+		C2F7000B5AA8195E5A0D843DE1AE1554 /* FSPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE753FEC8DF9BA33E8E762917B3EA93 /* FSPageControl.swift */; };
+		C9D65759B4F36BDD6F29F0D4EA18AEFF /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AB18F3B9797AA1509262C05BE6F9B494 /* SVProgressHUD.bundle */; };
+		CA9916421BECF24658FE7EF7E97B6E90 /* FSPagerViewObjcCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C33A1C6497186A79446055ABE806B /* FSPagerViewObjcCompat.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CE2C6FD104092EA3F2F0A357C72460A8 /* FSPagerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 72112B3D70A557D82083187F1252FDBB /* FSPagerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4A9338A969C1416E3C79CECCB97D514 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = A5329D8AA5C7D4785E79AF07DDB1AFB2 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC8B887AEEF7F1E5BE33EBA4E18A95EF /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C69F0DB410FDB2F0968566543D9A43 /* SVRadialGradientLayer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F2C36AFACE9A34F67EDE675FAAC846FA /* FSPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6CF06750193F251497E249AF14D256 /* FSPagerViewCell.swift */; };
+		FF886124915FEF2A6FBB663CA621B4FC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE46B11FEBCBB7C689EB07A5E57BD38 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		309E8258DA2055B68970BAAB47A4D05A /* PBXContainerItemProxy */ = {
+		48BDDE6D16C224A1B6093E6AB83F5EDA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D4F8239FB329387A8476B964D92D92E7;
 			remoteInfo = FSPagerView;
 		};
+		D0572CE79AFACA8B24C0F19EB5C71D11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C8D67D8B72D6BA42CCEDB648537A340;
+			remoteInfo = SVProgressHUD;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06531DCCDF89A375869CB3758BE71E25 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
 		0F47FB5E28EE8C8342B1776D813D1A4C /* FSPagerView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FSPagerView; path = FSPagerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1004C2400614AF32AB36023666793BF2 /* Pods-CaseStudy-BNI */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CaseStudy-BNI"; path = Pods_CaseStudy_BNI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D20917481C129BD31786C0800A5E4A5 /* FSPageControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPageControl.swift; path = Sources/FSPageControl.swift; sourceTree = "<group>"; };
-		4DE77834550077BF8D096E05313230C3 /* FSPagerViewObjcCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSPagerViewObjcCompat.h; path = Sources/FSPagerViewObjcCompat.h; sourceTree = "<group>"; };
-		54C1376B42F87045871183577E717BE7 /* FSPagerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FSPagerView.modulemap; sourceTree = "<group>"; };
+		17D873242B3DA61DD314FF1F2BF79190 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		1FFEF010B46FD2AB34EE5E36323F06F8 /* FSPageViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPageViewLayout.swift; path = Sources/FSPageViewLayout.swift; sourceTree = "<group>"; };
+		29B830D94297DA6CF8A1B61C610F068E /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
+		34C69F0DB410FDB2F0968566543D9A43 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		3776A12CADFD7D6E659C97DB44732369 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		3B4CD899478B751DB59246F44D57CFF4 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		3B890F7E1559322BE602FACAC27AC0FA /* FSPagerViewObjcCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSPagerViewObjcCompat.h; path = Sources/FSPagerViewObjcCompat.h; sourceTree = "<group>"; };
+		3D843767E860A0B3DD61EDB05059B50C /* FSPagerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FSPagerView-Info.plist"; sourceTree = "<group>"; };
+		4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4EB852D9CC650906F4D75E0444D00315 /* FSPagerCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPagerCollectionView.swift; path = Sources/FSPagerCollectionView.swift; sourceTree = "<group>"; };
 		56D968B4E65CCED09E13218E4D128587 /* Pods-CaseStudy-BNI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CaseStudy-BNI-dummy.m"; sourceTree = "<group>"; };
-		5C4B95D67FD3A0B2ED2100C6B8ACDDF8 /* FSPagerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSPagerView-prefix.pch"; sourceTree = "<group>"; };
-		755B6D47324B150431591FA0B0FF57AE /* FSPagerViewLayoutAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPagerViewLayoutAttributes.swift; path = Sources/FSPagerViewLayoutAttributes.swift; sourceTree = "<group>"; };
+		5816A37B64683A096BF00B138C55D9BA /* SVProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.release.xcconfig; sourceTree = "<group>"; };
+		5B6CF06750193F251497E249AF14D256 /* FSPagerViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPagerViewCell.swift; path = Sources/FSPagerViewCell.swift; sourceTree = "<group>"; };
+		5F6CCC737CC068092B25DFAB1F284CE1 /* FSPagerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSPagerView.debug.xcconfig; sourceTree = "<group>"; };
+		71094F90C1045F0755A0C1411C814105 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		72112B3D70A557D82083187F1252FDBB /* FSPagerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSPagerView-umbrella.h"; sourceTree = "<group>"; };
 		772DB12DEA8FF0702A69A74FE0A790E3 /* Pods-CaseStudy-BNI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CaseStudy-BNI-acknowledgements.markdown"; sourceTree = "<group>"; };
 		79FE688A510BFF52EE4A9E4BF713A9CA /* Pods-CaseStudy-BNI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CaseStudy-BNI.release.xcconfig"; sourceTree = "<group>"; };
-		883B498B63505BC557AB391BF282C8EF /* FSPagerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSPagerView-dummy.m"; sourceTree = "<group>"; };
+		7E77BD84549B56F186986D76DF30B6F0 /* FSPagerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPagerView.swift; path = Sources/FSPagerView.swift; sourceTree = "<group>"; };
+		8CE2AD31F00D0EF9C522211BDDBF6C3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		8E24705B79A6350B8CA4B7E98B9223FF /* Pods-CaseStudy-BNI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CaseStudy-BNI.modulemap"; sourceTree = "<group>"; };
-		9620C112F0330566F4B89C4B962D2FEC /* FSPageViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPageViewLayout.swift; path = Sources/FSPageViewLayout.swift; sourceTree = "<group>"; };
+		90626DFCB7E3744AA93D8CE8352F60FB /* SVProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
+		9185295E61D9F64F72E4A11C2105D290 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		94E582CBABED2905352ACAE670981AFD /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		9A7310DEE7B0EBC9C89D7B8D9FDB93C5 /* SVProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SVProgressHUD-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DD0BA190B7C71B40D13AE6E27FF38F9 /* Pods-CaseStudy-BNI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CaseStudy-BNI-umbrella.h"; sourceTree = "<group>"; };
+		9DE753FEC8DF9BA33E8E762917B3EA93 /* FSPageControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPageControl.swift; path = Sources/FSPageControl.swift; sourceTree = "<group>"; };
+		9F0ACDE09C96DBFE5F9E7653D6A153F3 /* FSPageViewTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPageViewTransformer.swift; path = Sources/FSPageViewTransformer.swift; sourceTree = "<group>"; };
 		9F23626518D1C27AD08FAE9CE3B57F08 /* Pods-CaseStudy-BNI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CaseStudy-BNI.debug.xcconfig"; sourceTree = "<group>"; };
+		9FE46B11FEBCBB7C689EB07A5E57BD38 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		A08F8621FE02BE1E2558DC99BCC9397A /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		A18C33A1C6497186A79446055ABE806B /* FSPagerViewObjcCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSPagerViewObjcCompat.m; path = Sources/FSPagerViewObjcCompat.m; sourceTree = "<group>"; };
+		A5329D8AA5C7D4785E79AF07DDB1AFB2 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		A7AB1C9057C27436D1452F6A455C718F /* FSPagerViewLayoutAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPagerViewLayoutAttributes.swift; path = Sources/FSPagerViewLayoutAttributes.swift; sourceTree = "<group>"; };
 		A94D52AAE38EFEF53A02D6E7108029E7 /* Pods-CaseStudy-BNI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CaseStudy-BNI-acknowledgements.plist"; sourceTree = "<group>"; };
-		AAD6CDD416CDD62E164451B4E18CF7A0 /* FSPagerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPagerView.swift; path = Sources/FSPagerView.swift; sourceTree = "<group>"; };
-		B4F83B1F343C53DB55E4DD551557F9B0 /* FSPagerCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPagerCollectionView.swift; path = Sources/FSPagerCollectionView.swift; sourceTree = "<group>"; };
+		AB18F3B9797AA1509262C05BE6F9B494 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		B37E36523AFF8638FEA7F0D0151F6F44 /* FSPagerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSPagerView-dummy.m"; sourceTree = "<group>"; };
 		B89681EBB4B9CC57C44510BBEB5D928D /* Pods-CaseStudy-BNI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CaseStudy-BNI-Info.plist"; sourceTree = "<group>"; };
-		BD61E8F7E5A3F9C223CB3A8D35FA74BA /* FSPageViewTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPageViewTransformer.swift; path = Sources/FSPageViewTransformer.swift; sourceTree = "<group>"; };
-		BE8A7EA2E88F1E59A16CEBBE8E70EBD9 /* FSPagerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSPagerView-umbrella.h"; sourceTree = "<group>"; };
-		C06835C7510750D7D8C6B0781317C0AA /* FSPagerViewObjcCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSPagerViewObjcCompat.m; path = Sources/FSPagerViewObjcCompat.m; sourceTree = "<group>"; };
-		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BCCC110CF717FCA0908D236CD00ABA76 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		CCD1BAF841FF9EB48CF7C2AB57A565B1 /* FSPagerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSPagerView-prefix.pch"; sourceTree = "<group>"; };
 		DC908C29D1AB316A529787F9E342A395 /* Pods-CaseStudy-BNI-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CaseStudy-BNI-frameworks.sh"; sourceTree = "<group>"; };
-		E817F4D29D20E42F7071756A831DFA88 /* FSPagerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FSPagerView-Info.plist"; sourceTree = "<group>"; };
-		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		ED2F113F60774AE19D8129AA504CFF62 /* FSPagerViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPagerViewCell.swift; path = Sources/FSPagerViewCell.swift; sourceTree = "<group>"; };
-		EEE68582D06093A1C75A4D7FBF4EA533 /* FSPagerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSPagerView.debug.xcconfig; sourceTree = "<group>"; };
-		F939DD32A1D593BF543C03C115A544D6 /* FSPagerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSPagerView.release.xcconfig; sourceTree = "<group>"; };
+		E227A2E486E2F36DCB1E5B36ABC0E335 /* FSPagerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FSPagerView.modulemap; sourceTree = "<group>"; };
+		E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB160604BA387C340AFF2760268D3D53 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = SVProgressHUD/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		ED9A18C75F4858954771C6134CF031CE /* FSPagerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSPagerView.release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6E7BFABC0921DF0AFA27B1A07D2D4E1E /* Frameworks */ = {
+		0916B72023AFD19B5C5FCDB0E549723E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3B1FE26EA29DF87A804A32F4C40F34E /* Foundation.framework in Frameworks */,
+				5CCFEFC8D4424B1132A586F2F15BF455 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2560AEF01B4ED19DB7D7B4882A6F90F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98455F4176C861F9E33D36892A932684 /* Foundation.framework in Frameworks */,
+				FF886124915FEF2A6FBB663CA621B4FC /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,80 +138,90 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0CFB37C49ECD64DAB9F57673811063E8 /* FSPagerView */ = {
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1D20917481C129BD31786C0800A5E4A5 /* FSPageControl.swift */,
-				B4F83B1F343C53DB55E4DD551557F9B0 /* FSPagerCollectionView.swift */,
-				AAD6CDD416CDD62E164451B4E18CF7A0 /* FSPagerView.swift */,
-				ED2F113F60774AE19D8129AA504CFF62 /* FSPagerViewCell.swift */,
-				755B6D47324B150431591FA0B0FF57AE /* FSPagerViewLayoutAttributes.swift */,
-				4DE77834550077BF8D096E05313230C3 /* FSPagerViewObjcCompat.h */,
-				C06835C7510750D7D8C6B0781317C0AA /* FSPagerViewObjcCompat.m */,
-				9620C112F0330566F4B89C4B962D2FEC /* FSPageViewLayout.swift */,
-				BD61E8F7E5A3F9C223CB3A8D35FA74BA /* FSPageViewTransformer.swift */,
-				5B99539154F62E2C331C075575C13260 /* Support Files */,
-			);
-			name = FSPagerView;
-			path = FSPagerView;
-			sourceTree = "<group>";
-		};
-		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+				F0A778C0229E9BF1FD97896B93F3272B /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		22F1D7AA1352B409F85AA92B61D39F08 /* Products */ = {
+		1504765B405048584E15F0E1970CE4CD /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				0F47FB5E28EE8C8342B1776D813D1A4C /* FSPagerView */,
-				1004C2400614AF32AB36023666793BF2 /* Pods-CaseStudy-BNI */,
+				A5329D8AA5C7D4785E79AF07DDB1AFB2 /* SVIndefiniteAnimatedView.h */,
+				06531DCCDF89A375869CB3758BE71E25 /* SVIndefiniteAnimatedView.m */,
+				3B4CD899478B751DB59246F44D57CFF4 /* SVProgressAnimatedView.h */,
+				9185295E61D9F64F72E4A11C2105D290 /* SVProgressAnimatedView.m */,
+				17D873242B3DA61DD314FF1F2BF79190 /* SVProgressHUD.h */,
+				A08F8621FE02BE1E2558DC99BCC9397A /* SVProgressHUD.m */,
+				71094F90C1045F0755A0C1411C814105 /* SVRadialGradientLayer.h */,
+				34C69F0DB410FDB2F0968566543D9A43 /* SVRadialGradientLayer.m */,
+				799E2BCE2C54730A66D3F0EB2E8A5813 /* Resources */,
 			);
-			name = Products;
+			name = Core;
 			sourceTree = "<group>";
 		};
-		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+		3AC227D0A00D722C9F3F166B5D0FF143 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
-				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+				DEDC70132838999BCECEB511B6262CDB /* FSPagerView */,
+				3D65145DBE3695232B482404DA806C5F /* SVProgressHUD */,
 			);
-			name = iOS;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		5B99539154F62E2C331C075575C13260 /* Support Files */ = {
+		3D65145DBE3695232B482404DA806C5F /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				54C1376B42F87045871183577E717BE7 /* FSPagerView.modulemap */,
-				883B498B63505BC557AB391BF282C8EF /* FSPagerView-dummy.m */,
-				E817F4D29D20E42F7071756A831DFA88 /* FSPagerView-Info.plist */,
-				5C4B95D67FD3A0B2ED2100C6B8ACDDF8 /* FSPagerView-prefix.pch */,
-				BE8A7EA2E88F1E59A16CEBBE8E70EBD9 /* FSPagerView-umbrella.h */,
-				EEE68582D06093A1C75A4D7FBF4EA533 /* FSPagerView.debug.xcconfig */,
-				F939DD32A1D593BF543C03C115A544D6 /* FSPagerView.release.xcconfig */,
+				1504765B405048584E15F0E1970CE4CD /* Core */,
+				FBDCFAD8569E5E3C1AFD2BC52B6FF504 /* Support Files */,
+			);
+			name = SVProgressHUD;
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		799E2BCE2C54730A66D3F0EB2E8A5813 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EB160604BA387C340AFF2760268D3D53 /* PrivacyInfo.xcprivacy */,
+				AB18F3B9797AA1509262C05BE6F9B494 /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		86661C04670F2AB072E634DF56B59B70 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E227A2E486E2F36DCB1E5B36ABC0E335 /* FSPagerView.modulemap */,
+				B37E36523AFF8638FEA7F0D0151F6F44 /* FSPagerView-dummy.m */,
+				3D843767E860A0B3DD61EDB05059B50C /* FSPagerView-Info.plist */,
+				CCD1BAF841FF9EB48CF7C2AB57A565B1 /* FSPagerView-prefix.pch */,
+				72112B3D70A557D82083187F1252FDBB /* FSPagerView-umbrella.h */,
+				5F6CCC737CC068092B25DFAB1F284CE1 /* FSPagerView.debug.xcconfig */,
+				ED9A18C75F4858954771C6134CF031CE /* FSPagerView.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/FSPagerView";
 			sourceTree = "<group>";
 		};
-		5DE3D0F0B06A6B1366B094D3727C370C /* Pods */ = {
+		B3C5F03F5BE074D529C403C69A62FF40 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0CFB37C49ECD64DAB9F57673811063E8 /* FSPagerView */,
+				0F47FB5E28EE8C8342B1776D813D1A4C /* FSPagerView */,
+				1004C2400614AF32AB36023666793BF2 /* Pods-CaseStudy-BNI */,
+				E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD */,
 			);
-			name = Pods;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				5DE3D0F0B06A6B1366B094D3727C370C /* Pods */,
-				22F1D7AA1352B409F85AA92B61D39F08 /* Products */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				3AC227D0A00D722C9F3F166B5D0FF143 /* Pods */,
+				B3C5F03F5BE074D529C403C69A62FF40 /* Products */,
 				D6C940C5BB7E61425F4E911E7C53E842 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -192,6 +251,49 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		DEDC70132838999BCECEB511B6262CDB /* FSPagerView */ = {
+			isa = PBXGroup;
+			children = (
+				9DE753FEC8DF9BA33E8E762917B3EA93 /* FSPageControl.swift */,
+				4EB852D9CC650906F4D75E0444D00315 /* FSPagerCollectionView.swift */,
+				7E77BD84549B56F186986D76DF30B6F0 /* FSPagerView.swift */,
+				5B6CF06750193F251497E249AF14D256 /* FSPagerViewCell.swift */,
+				A7AB1C9057C27436D1452F6A455C718F /* FSPagerViewLayoutAttributes.swift */,
+				3B890F7E1559322BE602FACAC27AC0FA /* FSPagerViewObjcCompat.h */,
+				A18C33A1C6497186A79446055ABE806B /* FSPagerViewObjcCompat.m */,
+				1FFEF010B46FD2AB34EE5E36323F06F8 /* FSPageViewLayout.swift */,
+				9F0ACDE09C96DBFE5F9E7653D6A153F3 /* FSPageViewTransformer.swift */,
+				86661C04670F2AB072E634DF56B59B70 /* Support Files */,
+			);
+			name = FSPagerView;
+			path = FSPagerView;
+			sourceTree = "<group>";
+		};
+		F0A778C0229E9BF1FD97896B93F3272B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */,
+				9FE46B11FEBCBB7C689EB07A5E57BD38 /* QuartzCore.framework */,
+				8CE2AD31F00D0EF9C522211BDDBF6C3C /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FBDCFAD8569E5E3C1AFD2BC52B6FF504 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				29B830D94297DA6CF8A1B61C610F068E /* SVProgressHUD.modulemap */,
+				BCCC110CF717FCA0908D236CD00ABA76 /* SVProgressHUD-dummy.m */,
+				9A7310DEE7B0EBC9C89D7B8D9FDB93C5 /* SVProgressHUD-Info.plist */,
+				94E582CBABED2905352ACAE670981AFD /* SVProgressHUD-prefix.pch */,
+				3776A12CADFD7D6E659C97DB44732369 /* SVProgressHUD-umbrella.h */,
+				90626DFCB7E3744AA93D8CE8352F60FB /* SVProgressHUD.debug.xcconfig */,
+				5816A37B64683A096BF00B138C55D9BA /* SVProgressHUD.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -204,30 +306,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F97D21DEC733E28DFE533C0FDE35C626 /* Headers */ = {
+		B5AD5C971A6BE58373CE9F2120F1481A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				175EE1CD5A077F0D0CD945F192DB43A8 /* Pods-CaseStudy-BNI-umbrella.h in Headers */,
+				522C3A21334AD1AFD3C12FBCA62A675F /* Pods-CaseStudy-BNI-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3CFD33AB27993819E2EA9267DBD8C8A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4A9338A969C1416E3C79CECCB97D514 /* SVIndefiniteAnimatedView.h in Headers */,
+				0335018FAC1AD7BC453F8F9A68CDABC4 /* SVProgressAnimatedView.h in Headers */,
+				19FE9BC7F25FF5D48B6B2B3B520D4D47 /* SVProgressHUD.h in Headers */,
+				82FE3B046FEA46F2BDFE7FB0E9D7CBAD /* SVProgressHUD-umbrella.h in Headers */,
+				2E84CD435150EDA1356EE23EAB3CE5E7 /* SVRadialGradientLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8646993B76C899A1177782411661A803 /* Pods-CaseStudy-BNI */ = {
+		1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DD8EF5326DDBAB2BBF4BCD7D65EBF8A6 /* Build configuration list for PBXNativeTarget "Pods-CaseStudy-BNI" */;
+			buildConfigurationList = 3B02596C7FAA57EB3E61033F4406577A /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
 			buildPhases = (
-				F97D21DEC733E28DFE533C0FDE35C626 /* Headers */,
-				A40400C32325CB460172DC178CC2691D /* Sources */,
-				6E7BFABC0921DF0AFA27B1A07D2D4E1E /* Frameworks */,
-				BDF36B4C08171D78363D144B42B22062 /* Resources */,
+				D3CFD33AB27993819E2EA9267DBD8C8A /* Headers */,
+				EB849C6AE4461635277F123BAB25906B /* Sources */,
+				2560AEF01B4ED19DB7D7B4882A6F90F9 /* Frameworks */,
+				AC47CEB36BE3DE7A7A5DB7547DA55F3D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4292AF8B3FFD2127FE459A75067D050D /* PBXTargetDependency */,
+			);
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD */;
+			productType = "com.apple.product-type.framework";
+		};
+		8646993B76C899A1177782411661A803 /* Pods-CaseStudy-BNI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 540FA7C6CBB21FD841FEBB3CB4A253D9 /* Build configuration list for PBXNativeTarget "Pods-CaseStudy-BNI" */;
+			buildPhases = (
+				B5AD5C971A6BE58373CE9F2120F1481A /* Headers */,
+				5059BE4798FD37D0FEA48E22CEF1884B /* Sources */,
+				0916B72023AFD19B5C5FCDB0E549723E /* Frameworks */,
+				D03F84D4D221B1D39C920E1B679FF40B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC42DF278D46D4D44DD50CB39C584BD7 /* PBXTargetDependency */,
+				78D9161030E134EC823BF000515992E9 /* PBXTargetDependency */,
 			);
 			name = "Pods-CaseStudy-BNI";
 			productName = Pods_CaseStudy_BNI;
@@ -270,21 +403,24 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 22F1D7AA1352B409F85AA92B61D39F08 /* Products */;
+			productRefGroup = B3C5F03F5BE074D529C403C69A62FF40 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				D4F8239FB329387A8476B964D92D92E7 /* FSPagerView */,
 				8646993B76C899A1177782411661A803 /* Pods-CaseStudy-BNI */,
+				1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BDF36B4C08171D78363D144B42B22062 /* Resources */ = {
+		AC47CEB36BE3DE7A7A5DB7547DA55F3D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92A81311D8592CB3D907E9DA59023E38 /* PrivacyInfo.xcprivacy in Resources */,
+				C9D65759B4F36BDD6F29F0D4EA18AEFF /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,9 +431,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D03F84D4D221B1D39C920E1B679FF40B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5059BE4798FD37D0FEA48E22CEF1884B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD3AA72B9084A109B88A1781BFD5365 /* Pods-CaseStudy-BNI-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		56BE6D53502C53E0B91065BC1E5C239F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -314,29 +465,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A40400C32325CB460172DC178CC2691D /* Sources */ = {
+		EB849C6AE4461635277F123BAB25906B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A12870662400416B05E8BE097C7D865C /* Pods-CaseStudy-BNI-dummy.m in Sources */,
+				151C0967BB3061765C5CCCF1BB90B9F0 /* SVIndefiniteAnimatedView.m in Sources */,
+				5C1882C3220FE99428DE2D961FE7C369 /* SVProgressAnimatedView.m in Sources */,
+				42C0009DD3DB75C3C1BC854ECD5A4AB8 /* SVProgressHUD.m in Sources */,
+				6896DFB74F3F686051682B127D231EE7 /* SVProgressHUD-dummy.m in Sources */,
+				DC8B887AEEF7F1E5BE33EBA4E18A95EF /* SVRadialGradientLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4292AF8B3FFD2127FE459A75067D050D /* PBXTargetDependency */ = {
+		78D9161030E134EC823BF000515992E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = 1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */;
+			targetProxy = D0572CE79AFACA8B24C0F19EB5C71D11 /* PBXContainerItemProxy */;
+		};
+		AC42DF278D46D4D44DD50CB39C584BD7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FSPagerView;
 			target = D4F8239FB329387A8476B964D92D92E7 /* FSPagerView */;
-			targetProxy = 309E8258DA2055B68970BAAB47A4D05A /* PBXContainerItemProxy */;
+			targetProxy = 48BDDE6D16C224A1B6093E6AB83F5EDA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		31731D2A96C7FF5AA4EE56EC2EB0AE2F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F939DD32A1D593BF543C03C115A544D6 /* FSPagerView.release.xcconfig */;
+			baseConfigurationReference = ED9A18C75F4858954771C6134CF031CE /* FSPagerView.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -371,7 +532,7 @@
 		};
 		434E4A52CBC9F74FA2D8CDD170442C4A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEE68582D06093A1C75A4D7FBF4EA533 /* FSPagerView.debug.xcconfig */;
+			baseConfigurationReference = 5F6CCC737CC068092B25DFAB1F284CE1 /* FSPagerView.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -403,7 +564,43 @@
 			};
 			name = Debug;
 		};
-		82EEED154ADCAFC985D8CC0521C2B2E4 /* Release */ = {
+		563564487BD399E6F70C91C5FDCCBDA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5816A37B64683A096BF00B138C55D9BA /* SVProgressHUD.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = SVProgressHUD;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		83EC79959A83566727BE19E94E6B9BC2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 79FE688A510BFF52EE4A9E4BF713A9CA /* Pods-CaseStudy-BNI.release.xcconfig */;
 			buildSettings = {
@@ -507,6 +704,43 @@
 			};
 			name = Debug;
 		};
+		9AFC884382485CE62AB37A542B0F5287 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F23626518D1C27AD08FAE9CE3B57F08 /* Pods-CaseStudy-BNI.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CaseStudy-BNI/Pods-CaseStudy-BNI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CaseStudy-BNI/Pods-CaseStudy-BNI.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -569,11 +803,10 @@
 			};
 			name = Release;
 		};
-		CC37E9C60FA7F3671425779DBB9879EB /* Debug */ = {
+		C107A00E8915CBCD07039B1CDC63628E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F23626518D1C27AD08FAE9CE3B57F08 /* Pods-CaseStudy-BNI.debug.xcconfig */;
+			baseConfigurationReference = 90626DFCB7E3744AA93D8CE8352F60FB /* SVProgressHUD.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -583,7 +816,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-CaseStudy-BNI/Pods-CaseStudy-BNI-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -591,15 +825,13 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CaseStudy-BNI/Pods-CaseStudy-BNI.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = SVProgressHUD;
+				PRODUCT_NAME = SVProgressHUD;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -609,6 +841,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3B02596C7FAA57EB3E61033F4406577A /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C107A00E8915CBCD07039B1CDC63628E /* Debug */,
+				563564487BD399E6F70C91C5FDCCBDA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -618,20 +859,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		540FA7C6CBB21FD841FEBB3CB4A253D9 /* Build configuration list for PBXNativeTarget "Pods-CaseStudy-BNI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AFC884382485CE62AB37A542B0F5287 /* Debug */,
+				83EC79959A83566727BE19E94E6B9BC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		98343682D690F1F5CF2596A899F35F57 /* Build configuration list for PBXNativeTarget "FSPagerView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				434E4A52CBC9F74FA2D8CDD170442C4A /* Debug */,
 				31731D2A96C7FF5AA4EE56EC2EB0AE2F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DD8EF5326DDBAB2BBF4BCD7D65EBF8A6 /* Build configuration list for PBXNativeTarget "Pods-CaseStudy-BNI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CC37E9C60FA7F3671425779DBB9879EB /* Debug */,
-				82EEED154ADCAFC985D8CC0521C2B2E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

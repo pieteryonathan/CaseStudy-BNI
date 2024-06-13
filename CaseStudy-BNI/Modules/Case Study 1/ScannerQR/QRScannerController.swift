@@ -220,8 +220,11 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
                     // [nameBank] [idPayment] [nameOfMerchant] [totalOfTransaction]
                     let paymentConfirmation = PaymentConfirmation(idPayment: components[1], nameBank: components[0], nameOfMerchant: components[2], totalOfTransaction: Int(components[3]))
                     let controller = PaymentConfirmationController(paymentConfirmation: paymentConfirmation)
-                    controller.modalPresentationStyle = .fullScreen
-                    present(controller, animated: true, completion: nil)
+                    let fullScreenNavController = UINavigationController(rootViewController: controller)
+                    fullScreenNavController.modalPresentationStyle = .fullScreen
+                    
+                    // Present the full screen navigation controller modally
+                    present(fullScreenNavController, animated: true, completion: nil)
                 }
             }
         }
@@ -277,10 +280,16 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
             
             if let firstFeature = features.first as? CIQRCodeFeature,
                 let qrCodeString = firstFeature.messageString {
-                print("Result: \(qrCodeString)")
-//                labelResult.text = "Detected QR code: \(qrCodeString)"
-//                imageViewResult.image = image
-                // Process the QR code data as needed
+                let components = qrCodeString.components(separatedBy: ".")
+                // [nameBank] [idPayment] [nameOfMerchant] [totalOfTransaction]
+                let paymentConfirmation = PaymentConfirmation(idPayment: components[1], nameBank: components[0], nameOfMerchant: components[2], totalOfTransaction: Int(components[3]))
+                let controller = PaymentConfirmationController(paymentConfirmation: paymentConfirmation)
+                // Create a navigation controller with PaymentConfirmationController as the root
+                let fullScreenNavController = UINavigationController(rootViewController: controller)
+                fullScreenNavController.modalPresentationStyle = .fullScreen
+                
+                // Present the full screen navigation controller modally
+                present(fullScreenNavController, animated: true, completion: nil)
             } else {
 //                labelResult.text = "No QR code is detected"
 //                imageViewResult.image = nil

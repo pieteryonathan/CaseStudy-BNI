@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-CaseStudy-BNI/Pods-CaseStudy-BNI-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework
+${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework

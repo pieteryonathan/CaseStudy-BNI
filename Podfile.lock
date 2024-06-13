@@ -1,16 +1,22 @@
 PODS:
   - FSPagerView (0.8.3)
+  - SVProgressHUD (2.3.1):
+    - SVProgressHUD/Core (= 2.3.1)
+  - SVProgressHUD/Core (2.3.1)
 
 DEPENDENCIES:
   - FSPagerView
+  - SVProgressHUD
 
 SPEC REPOS:
   trunk:
     - FSPagerView
+    - SVProgressHUD
 
 SPEC CHECKSUMS:
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  SVProgressHUD: 4837c74bdfe2e51e8821c397825996a8d7de6e22
 
-PODFILE CHECKSUM: a08b3e2cea6878d8491d3486a0e47f66b1b8a81a
+PODFILE CHECKSUM: 3069096ab48d84e357fbe1a73c2f0b1f1632ba4f
 
 COCOAPODS: 1.15.2

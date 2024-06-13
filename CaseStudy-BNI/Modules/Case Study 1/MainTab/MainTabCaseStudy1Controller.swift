@@ -49,8 +49,9 @@ class MainTabCaseStudy1Controller: MainTabBarController {
     
     @objc func scanQR(_ sender: Any) {
         let qrScanner = QRScannerController()
-        qrScanner.modalPresentationStyle = .pageSheet
-        present(qrScanner, animated: true, completion: nil)
+        let navigationController = UINavigationController(rootViewController: qrScanner)
+        navigationController.modalPresentationStyle = .pageSheet
+        present(navigationController, animated: true, completion: nil)
     }
     
     // MARK: - Declaration Menu

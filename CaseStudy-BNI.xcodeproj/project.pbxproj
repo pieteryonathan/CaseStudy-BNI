@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7C12B1BABB245CE74DC53F64 /* Pods_CaseStudy_BNI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4B8786DFACFF3CC59A3AAE /* Pods_CaseStudy_BNI.framework */; };
+		975314E52C1B172300F2E257 /* PaymentCompletionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314E42C1B172300F2E257 /* PaymentCompletionController.swift */; };
+		975314E92C1B1ECC00F2E257 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314E82C1B1ECC00F2E257 /* UIViewControllerExtensions.swift */; };
 		97F7CB6D2C19C84B005F9AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7CB6C2C19C84B005F9AAD /* AppDelegate.swift */; };
 		97F7CB6F2C19C84B005F9AAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7CB6E2C19C84B005F9AAD /* SceneDelegate.swift */; };
 		97F7CB712C19C84B005F9AAD /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7CB702C19C84B005F9AAD /* HomepageViewController.swift */; };
@@ -32,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		8753B6A5609735D3D7D39A2F /* Pods-CaseStudy-BNI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaseStudy-BNI.debug.xcconfig"; path = "Target Support Files/Pods-CaseStudy-BNI/Pods-CaseStudy-BNI.debug.xcconfig"; sourceTree = "<group>"; };
+		975314E42C1B172300F2E257 /* PaymentCompletionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCompletionController.swift; sourceTree = "<group>"; };
+		975314E82C1B1ECC00F2E257 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		97F7CB692C19C84B005F9AAD /* CaseStudy-BNI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CaseStudy-BNI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97F7CB6C2C19C84B005F9AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97F7CB6E2C19C84B005F9AAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,14 @@
 				EE4B8786DFACFF3CC59A3AAE /* Pods_CaseStudy_BNI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		975314E32C1B15F000F2E257 /* PaymentCompletion */ = {
+			isa = PBXGroup;
+			children = (
+				975314E42C1B172300F2E257 /* PaymentCompletionController.swift */,
+			);
+			path = PaymentCompletion;
 			sourceTree = "<group>";
 		};
 		97F7CB602C19C84B005F9AAD = {
@@ -137,6 +149,7 @@
 				97F7CB832C19D232005F9AAD /* UIStackViewExtensions.swift */,
 				97F7CB9B2C19E121005F9AAD /* UIApllicationExtensions.swift */,
 				97F7CB9D2C19E205005F9AAD /* UIViewExtensions.swift */,
+				975314E82C1B1ECC00F2E257 /* UIViewControllerExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -189,6 +202,7 @@
 		97F7CB922C19DEB1005F9AAD /* ScannerQR */ = {
 			isa = PBXGroup;
 			children = (
+				975314E32C1B15F000F2E257 /* PaymentCompletion */,
 				97F7CBA12C1A067F005F9AAD /* PaymentConfirmation */,
 				97F7CB9F2C19F304005F9AAD /* QRScannerController.swift */,
 				97F7CB932C19DEC5005F9AAD /* ScannerQRController.swift */,
@@ -371,8 +385,10 @@
 				97F7CB842C19D232005F9AAD /* UIStackViewExtensions.swift in Sources */,
 				97F7CB8F2C19DC64005F9AAD /* MainTabBarController.swift in Sources */,
 				97F7CB9C2C19E121005F9AAD /* UIApllicationExtensions.swift in Sources */,
+				975314E92C1B1ECC00F2E257 /* UIViewControllerExtensions.swift in Sources */,
 				97F7CB8B2C19D90C005F9AAD /* NSLayoutConstraintExtensions.swift in Sources */,
 				97F7CBA62C1A075C005F9AAD /* PaymentConfirmation.swift in Sources */,
+				975314E52C1B172300F2E257 /* PaymentCompletionController.swift in Sources */,
 				97F7CB942C19DEC5005F9AAD /* ScannerQRController.swift in Sources */,
 				97F7CB9A2C19DF73005F9AAD /* HistoryTransactionController.swift in Sources */,
 				97F7CB6D2C19C84B005F9AAD /* AppDelegate.swift in Sources */,
