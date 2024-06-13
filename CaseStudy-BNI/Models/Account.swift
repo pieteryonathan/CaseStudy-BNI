@@ -8,7 +8,7 @@
 import Foundation
 import SVProgressHUD
 
-class Account {
+public class Account {
     
     static var balance: Int = 100000
     static var transactionHistory: [TransactionHistory] = [] { didSet {

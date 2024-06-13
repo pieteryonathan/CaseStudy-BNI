@@ -72,7 +72,7 @@ class HistoryTransactionController: UIViewController {
     // MARK: - SETUP
     
     private func setupView() {
-        containerView.addArrangedSubViews(views: [tableView])
+        containerView.addArrangedSubViews(views: [stackViewHeader ,tableView])
         stackViewHeader.addArrangedSubview(labelHeader)
     }
 }

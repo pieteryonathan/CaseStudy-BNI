@@ -15,6 +15,7 @@
 		975314F22C1B4AAC00F2E257 /* EmptyStateCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314F12C1B4AAC00F2E257 /* EmptyStateCustom.swift */; };
 		975314F42C1B4D0A00F2E257 /* TransactionHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314F32C1B4D0A00F2E257 /* TransactionHistory.swift */; };
 		975314F62C1B4E6600F2E257 /* FormattingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314F52C1B4E6600F2E257 /* FormattingHelper.swift */; };
+		975314FF2C1B5D7F00F2E257 /* CaseStudy_BNITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314FE2C1B5D7F00F2E257 /* CaseStudy_BNITests.swift */; };
 		97F7CB6D2C19C84B005F9AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7CB6C2C19C84B005F9AAD /* AppDelegate.swift */; };
 		97F7CB6F2C19C84B005F9AAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7CB6E2C19C84B005F9AAD /* SceneDelegate.swift */; };
 		97F7CB712C19C84B005F9AAD /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7CB702C19C84B005F9AAD /* HomepageViewController.swift */; };
@@ -37,6 +38,16 @@
 		97F7CBAC2C1A1678005F9AAD /* Navbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7CBAB2C1A1678005F9AAD /* Navbar.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		975315002C1B5D7F00F2E257 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97F7CB612C19C84B005F9AAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97F7CB682C19C84B005F9AAD;
+			remoteInfo = "CaseStudy-BNI";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		8753B6A5609735D3D7D39A2F /* Pods-CaseStudy-BNI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaseStudy-BNI.debug.xcconfig"; path = "Target Support Files/Pods-CaseStudy-BNI/Pods-CaseStudy-BNI.debug.xcconfig"; sourceTree = "<group>"; };
 		975314E42C1B172300F2E257 /* PaymentCompletionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCompletionController.swift; sourceTree = "<group>"; };
@@ -46,6 +57,8 @@
 		975314F12C1B4AAC00F2E257 /* EmptyStateCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateCustom.swift; sourceTree = "<group>"; };
 		975314F32C1B4D0A00F2E257 /* TransactionHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistory.swift; sourceTree = "<group>"; };
 		975314F52C1B4E6600F2E257 /* FormattingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattingHelper.swift; sourceTree = "<group>"; };
+		975314FC2C1B5D7F00F2E257 /* CaseStudy-BNITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CaseStudy-BNITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		975314FE2C1B5D7F00F2E257 /* CaseStudy_BNITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStudy_BNITests.swift; sourceTree = "<group>"; };
 		97F7CB692C19C84B005F9AAD /* CaseStudy-BNI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CaseStudy-BNI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97F7CB6C2C19C84B005F9AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97F7CB6E2C19C84B005F9AAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +86,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		975314F92C1B5D7F00F2E257 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		97F7CB662C19C84B005F9AAD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -109,10 +129,19 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		975314FD2C1B5D7F00F2E257 /* CaseStudy-BNITests */ = {
+			isa = PBXGroup;
+			children = (
+				975314FE2C1B5D7F00F2E257 /* CaseStudy_BNITests.swift */,
+			);
+			path = "CaseStudy-BNITests";
+			sourceTree = "<group>";
+		};
 		97F7CB602C19C84B005F9AAD = {
 			isa = PBXGroup;
 			children = (
 				97F7CB6B2C19C84B005F9AAD /* CaseStudy-BNI */,
+				975314FD2C1B5D7F00F2E257 /* CaseStudy-BNITests */,
 				97F7CB6A2C19C84B005F9AAD /* Products */,
 				FE3B6FADCF06E962620E43BB /* Pods */,
 				42D0EE40FDD980EBA279E701 /* Frameworks */,
@@ -123,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				97F7CB692C19C84B005F9AAD /* CaseStudy-BNI.app */,
+				975314FC2C1B5D7F00F2E257 /* CaseStudy-BNITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -285,6 +315,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		975314FB2C1B5D7F00F2E257 /* CaseStudy-BNITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 975315022C1B5D7F00F2E257 /* Build configuration list for PBXNativeTarget "CaseStudy-BNITests" */;
+			buildPhases = (
+				975314F82C1B5D7F00F2E257 /* Sources */,
+				975314F92C1B5D7F00F2E257 /* Frameworks */,
+				975314FA2C1B5D7F00F2E257 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				975315012C1B5D7F00F2E257 /* PBXTargetDependency */,
+			);
+			name = "CaseStudy-BNITests";
+			productName = "CaseStudy-BNITests";
+			productReference = 975314FC2C1B5D7F00F2E257 /* CaseStudy-BNITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		97F7CB682C19C84B005F9AAD /* CaseStudy-BNI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97F7CB7D2C19C84D005F9AAD /* Build configuration list for PBXNativeTarget "CaseStudy-BNI" */;
@@ -314,6 +362,10 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					975314FB2C1B5D7F00F2E257 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 97F7CB682C19C84B005F9AAD;
+					};
 					97F7CB682C19C84B005F9AAD = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -333,11 +385,19 @@
 			projectRoot = "";
 			targets = (
 				97F7CB682C19C84B005F9AAD /* CaseStudy-BNI */,
+				975314FB2C1B5D7F00F2E257 /* CaseStudy-BNITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		975314FA2C1B5D7F00F2E257 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		97F7CB672C19C84B005F9AAD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -392,6 +452,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		975314F82C1B5D7F00F2E257 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				975314FF2C1B5D7F00F2E257 /* CaseStudy_BNITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		97F7CB652C19C84B005F9AAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -426,6 +494,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		975315012C1B5D7F00F2E257 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97F7CB682C19C84B005F9AAD /* CaseStudy-BNI */;
+			targetProxy = 975315002C1B5D7F00F2E257 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		97F7CB772C19C84D005F9AAD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -438,6 +514,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		975315032C1B5D7F00F2E257 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 98QK38C4QU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pieteryonathan.CaseStudy-BNITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CaseStudy-BNI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CaseStudy-BNI";
+			};
+			name = Debug;
+		};
+		975315042C1B5D7F00F2E257 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 98QK38C4QU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pieteryonathan.CaseStudy-BNITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CaseStudy-BNI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CaseStudy-BNI";
+			};
+			name = Release;
+		};
 		97F7CB7B2C19C84D005F9AAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -620,6 +732,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		975315022C1B5D7F00F2E257 /* Build configuration list for PBXNativeTarget "CaseStudy-BNITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				975315032C1B5D7F00F2E257 /* Debug */,
+				975315042C1B5D7F00F2E257 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		97F7CB642C19C84B005F9AAD /* Build configuration list for PBXProject "CaseStudy-BNI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
