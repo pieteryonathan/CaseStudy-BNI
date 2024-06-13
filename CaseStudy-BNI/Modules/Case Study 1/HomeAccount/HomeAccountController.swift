@@ -98,7 +98,7 @@ class HomeAccountController: UIViewController {
     
     private lazy var labelAmount: UILabel = {
         let label = UILabel()
-        label.text = "1.000.000"
+        label.text = Account.getStringBalance()
         label.textColor = .black
         label.font = .systemFont(ofSize: 24, weight: .bold)
         return label
@@ -137,12 +137,22 @@ class HomeAccountController: UIViewController {
     }
     
     // MARK: - OVERRIDE
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        labelAmount.text = Account.getStringBalance()
+    }
   
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .white
         setupView()
+        
+        AccountManager.shared.paymentSuccessfull = {[unowned self] in
+            labelAmount.text = Account.getStringBalance()
+        }
     }
     
     func setupView() {

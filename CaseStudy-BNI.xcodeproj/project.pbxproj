@@ -10,6 +10,11 @@
 		7C12B1BABB245CE74DC53F64 /* Pods_CaseStudy_BNI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4B8786DFACFF3CC59A3AAE /* Pods_CaseStudy_BNI.framework */; };
 		975314E52C1B172300F2E257 /* PaymentCompletionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314E42C1B172300F2E257 /* PaymentCompletionController.swift */; };
 		975314E92C1B1ECC00F2E257 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314E82C1B1ECC00F2E257 /* UIViewControllerExtensions.swift */; };
+		975314EB2C1B31A000F2E257 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314EA2C1B31A000F2E257 /* Account.swift */; };
+		975314F02C1B499400F2E257 /* TransactionHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314EF2C1B499400F2E257 /* TransactionHistoryCell.swift */; };
+		975314F22C1B4AAC00F2E257 /* EmptyStateCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314F12C1B4AAC00F2E257 /* EmptyStateCustom.swift */; };
+		975314F42C1B4D0A00F2E257 /* TransactionHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314F32C1B4D0A00F2E257 /* TransactionHistory.swift */; };
+		975314F62C1B4E6600F2E257 /* FormattingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314F52C1B4E6600F2E257 /* FormattingHelper.swift */; };
 		97F7CB6D2C19C84B005F9AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7CB6C2C19C84B005F9AAD /* AppDelegate.swift */; };
 		97F7CB6F2C19C84B005F9AAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7CB6E2C19C84B005F9AAD /* SceneDelegate.swift */; };
 		97F7CB712C19C84B005F9AAD /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7CB702C19C84B005F9AAD /* HomepageViewController.swift */; };
@@ -36,6 +41,11 @@
 		8753B6A5609735D3D7D39A2F /* Pods-CaseStudy-BNI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaseStudy-BNI.debug.xcconfig"; path = "Target Support Files/Pods-CaseStudy-BNI/Pods-CaseStudy-BNI.debug.xcconfig"; sourceTree = "<group>"; };
 		975314E42C1B172300F2E257 /* PaymentCompletionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCompletionController.swift; sourceTree = "<group>"; };
 		975314E82C1B1ECC00F2E257 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		975314EA2C1B31A000F2E257 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		975314EF2C1B499400F2E257 /* TransactionHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryCell.swift; sourceTree = "<group>"; };
+		975314F12C1B4AAC00F2E257 /* EmptyStateCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateCustom.swift; sourceTree = "<group>"; };
+		975314F32C1B4D0A00F2E257 /* TransactionHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistory.swift; sourceTree = "<group>"; };
+		975314F52C1B4E6600F2E257 /* FormattingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattingHelper.swift; sourceTree = "<group>"; };
 		97F7CB692C19C84B005F9AAD /* CaseStudy-BNI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CaseStudy-BNI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97F7CB6C2C19C84B005F9AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97F7CB6E2C19C84B005F9AAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +98,15 @@
 				975314E42C1B172300F2E257 /* PaymentCompletionController.swift */,
 			);
 			path = PaymentCompletion;
+			sourceTree = "<group>";
+		};
+		975314EE2C1B48E600F2E257 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				975314EF2C1B499400F2E257 /* TransactionHistoryCell.swift */,
+				975314F12C1B4AAC00F2E257 /* EmptyStateCustom.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		97F7CB602C19C84B005F9AAD = {
@@ -221,6 +240,7 @@
 		97F7CB962C19DF23005F9AAD /* HistoryTransaction */ = {
 			isa = PBXGroup;
 			children = (
+				975314EE2C1B48E600F2E257 /* Views */,
 				97F7CB992C19DF73005F9AAD /* HistoryTransactionController.swift */,
 			);
 			path = HistoryTransaction;
@@ -238,6 +258,8 @@
 			isa = PBXGroup;
 			children = (
 				97F7CBA52C1A075C005F9AAD /* PaymentConfirmation.swift */,
+				975314EA2C1B31A000F2E257 /* Account.swift */,
+				975314F32C1B4D0A00F2E257 /* TransactionHistory.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -246,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				97F7CBA92C1A1153005F9AAD /* StackViewHelpers.swift */,
+				975314F52C1B4E6600F2E257 /* FormattingHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -376,23 +399,28 @@
 				97F7CB892C19D61E005F9AAD /* Button.swift in Sources */,
 				97F7CB712C19C84B005F9AAD /* HomepageViewController.swift in Sources */,
 				97F7CB982C19DF45005F9AAD /* HomeAccountController.swift in Sources */,
+				975314F02C1B499400F2E257 /* TransactionHistoryCell.swift in Sources */,
 				97F7CBAC2C1A1678005F9AAD /* Navbar.swift in Sources */,
 				97F7CBA32C1A06B0005F9AAD /* PaymentConfirmationController.swift in Sources */,
 				97F7CBA02C19F305005F9AAD /* QRScannerController.swift in Sources */,
+				975314F22C1B4AAC00F2E257 /* EmptyStateCustom.swift in Sources */,
 				97F7CB9E2C19E205005F9AAD /* UIViewExtensions.swift in Sources */,
 				97F7CB912C19DCFC005F9AAD /* MainTabCaseStudy1Controller.swift in Sources */,
 				97F7CBAA2C1A1153005F9AAD /* StackViewHelpers.swift in Sources */,
+				975314F42C1B4D0A00F2E257 /* TransactionHistory.swift in Sources */,
 				97F7CB842C19D232005F9AAD /* UIStackViewExtensions.swift in Sources */,
 				97F7CB8F2C19DC64005F9AAD /* MainTabBarController.swift in Sources */,
 				97F7CB9C2C19E121005F9AAD /* UIApllicationExtensions.swift in Sources */,
 				975314E92C1B1ECC00F2E257 /* UIViewControllerExtensions.swift in Sources */,
 				97F7CB8B2C19D90C005F9AAD /* NSLayoutConstraintExtensions.swift in Sources */,
 				97F7CBA62C1A075C005F9AAD /* PaymentConfirmation.swift in Sources */,
+				975314F62C1B4E6600F2E257 /* FormattingHelper.swift in Sources */,
 				975314E52C1B172300F2E257 /* PaymentCompletionController.swift in Sources */,
 				97F7CB942C19DEC5005F9AAD /* ScannerQRController.swift in Sources */,
 				97F7CB9A2C19DF73005F9AAD /* HistoryTransactionController.swift in Sources */,
 				97F7CB6D2C19C84B005F9AAD /* AppDelegate.swift in Sources */,
 				97F7CB6F2C19C84B005F9AAD /* SceneDelegate.swift in Sources */,
+				975314EB2C1B31A000F2E257 /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

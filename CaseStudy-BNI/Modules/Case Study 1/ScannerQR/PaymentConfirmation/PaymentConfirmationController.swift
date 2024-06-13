@@ -211,6 +211,7 @@ class PaymentConfirmationController: UIViewController {
     
     // MARK: - VARIABLE DECLARATION
     private var paymentConfirmation: PaymentConfirmation
+    private var isPaymentProcessing = false
     
     // MARK: - INIT
     init(paymentConfirmation: PaymentConfirmation) {
@@ -218,7 +219,6 @@ class PaymentConfirmationController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
-    // Required initializer when subclassing UIViewController
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -252,36 +252,37 @@ class PaymentConfirmationController: UIViewController {
     }
     
     // MARK: - STATE
-    
-    func addPeriods(to number: Int) -> String {
-        var numberString = String(number)
-        
-        var index = numberString.count - 3
-        
-        while index > 0 {
-            numberString.insert(".", at: numberString.index(numberString.startIndex, offsetBy: index))
-            index -= 3
-        }
-        
-        return numberString
-    }
-    
     private func setState() {
         labelToAcount.text = paymentConfirmation.nameBank
         labelNameMerchant.text = paymentConfirmation.nameOfMerchant
-        labelAmount.text = addPeriods(to: paymentConfirmation.totalOfTransaction ?? 0)
+        labelAmount.text = FormattingHelper.addPeriods(to: paymentConfirmation.totalOfTransaction ?? 0)
         labelIdTransaction.text = paymentConfirmation.idPayment
     }
     
     // MARK: - ACTION
     
     @objc private func onPayTapped(_ sender: Any) {
+        guard !isPaymentProcessing else {
+               return // Ignore tap if payment is already in progress
+           }
+           
+           isPaymentProcessing = true
+        
         SVProgressHUD.show()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [unowned self] in
-            SVProgressHUD.dismiss()
-            let controller = PaymentCompletionController()
-            controller.pushReplace(on: self)
+        Account.withdraw(amount: paymentConfirmation.totalOfTransaction ?? 0) { success in
+            if success {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [unowned self] in
+                    AccountManager.shared.paymentSuccessfull?()
+                    Account.transactionHistory.append(TransactionHistory(merchant: paymentConfirmation.nameOfMerchant ?? "", total: paymentConfirmation.totalOfTransaction ?? 0))
+                    SVProgressHUD.dismiss()
+                    let controller = PaymentCompletionController()
+                    controller.pushReplace(on: self)
+                }
+            } else {
+                SVProgressHUD.showError(withStatus: "Unable to complete payment. Your balance is too low")
+            }
         }
+        
     }
     
     @objc private func onBackTapped(_ sender: Any) {

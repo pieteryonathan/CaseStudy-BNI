@@ -64,6 +64,14 @@ class NavbarBack: UIView {
     @objc private func onBackTapped(_ sender: Any) {
         controller.popOrDismiss(animated: true)
     }
+    
+    func dismissAllViewControllers() {
+        var presentingViewController = controller.presentingViewController
+        while presentingViewController?.presentingViewController != nil {
+            presentingViewController = presentingViewController?.presentingViewController
+        }
+        presentingViewController?.dismiss(animated: true, completion: nil)
+    }
 }
 
 class NavbarClose: NavbarBack {
@@ -96,13 +104,5 @@ class NavbarBacknClose: NavbarBack {
     
     @objc private func onCloseTapped(_ sender: Any) {
         self.dismissAllViewControllers()
-    }
-    
-    func dismissAllViewControllers() {
-        var presentingViewController = controller.presentingViewController
-        while presentingViewController?.presentingViewController != nil {
-            presentingViewController = presentingViewController?.presentingViewController
-        }
-        presentingViewController?.dismiss(animated: true, completion: nil)
     }
 }

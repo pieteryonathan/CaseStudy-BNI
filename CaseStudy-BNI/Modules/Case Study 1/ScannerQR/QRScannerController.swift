@@ -136,6 +136,7 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         // Create a session object
         captureSession = AVCaptureSession()
         
@@ -214,17 +215,27 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
         if let metadataObj = metadataObjects.first as? AVMetadataMachineReadableCodeObject {
             if metadataObj.type == .qr {
                 
-                isQRCodeDetected = true
                 if let qrCodeString = metadataObj.stringValue {
                     let components = qrCodeString.components(separatedBy: ".")
                     // [nameBank] [idPayment] [nameOfMerchant] [totalOfTransaction]
-                    let paymentConfirmation = PaymentConfirmation(idPayment: components[1], nameBank: components[0], nameOfMerchant: components[2], totalOfTransaction: Int(components[3]))
-                    let controller = PaymentConfirmationController(paymentConfirmation: paymentConfirmation)
-                    let fullScreenNavController = UINavigationController(rootViewController: controller)
-                    fullScreenNavController.modalPresentationStyle = .fullScreen
-                    
-                    // Present the full screen navigation controller modally
-                    present(fullScreenNavController, animated: true, completion: nil)
+                    if components.count == 4 {
+                        isQRCodeDetected = true
+                        let nameBank = components[0].trimmingCharacters(in: .whitespaces)
+                        let idPayment = components[1].trimmingCharacters(in: .whitespaces)
+                        let nameOfMerchant = components[2].trimmingCharacters(in: .whitespaces)
+                        let totalOfTransaction = components[3].trimmingCharacters(in: .whitespaces)
+
+                        let paymentConfirmation = PaymentConfirmation(idPayment: components[1], nameBank: components[0], nameOfMerchant: components[2], totalOfTransaction: Int(components[3]))
+                        let controller = PaymentConfirmationController(paymentConfirmation: paymentConfirmation)
+                        let fullScreenNavController = UINavigationController(rootViewController: controller)
+                        fullScreenNavController.modalPresentationStyle = .fullScreen
+                        
+                        // Present the full screen navigation controller modally
+                        present(fullScreenNavController, animated: true, completion: nil)
+                    } else {
+                        // QR code format is not as expected
+                        return
+                    }
                 }
             }
         }
@@ -282,17 +293,24 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
                 let qrCodeString = firstFeature.messageString {
                 let components = qrCodeString.components(separatedBy: ".")
                 // [nameBank] [idPayment] [nameOfMerchant] [totalOfTransaction]
-                let paymentConfirmation = PaymentConfirmation(idPayment: components[1], nameBank: components[0], nameOfMerchant: components[2], totalOfTransaction: Int(components[3]))
-                let controller = PaymentConfirmationController(paymentConfirmation: paymentConfirmation)
-                // Create a navigation controller with PaymentConfirmationController as the root
-                let fullScreenNavController = UINavigationController(rootViewController: controller)
-                fullScreenNavController.modalPresentationStyle = .fullScreen
-                
-                // Present the full screen navigation controller modally
-                present(fullScreenNavController, animated: true, completion: nil)
-            } else {
-//                labelResult.text = "No QR code is detected"
-//                imageViewResult.image = nil
+                if components.count == 4 {
+                    isQRCodeDetected = true
+                    let nameBank = components[0].trimmingCharacters(in: .whitespaces)
+                    let idPayment = components[1].trimmingCharacters(in: .whitespaces)
+                    let nameOfMerchant = components[2].trimmingCharacters(in: .whitespaces)
+                    let totalOfTransaction = components[3].trimmingCharacters(in: .whitespaces)
+
+                    let paymentConfirmation = PaymentConfirmation(idPayment: components[1], nameBank: components[0], nameOfMerchant: components[2], totalOfTransaction: Int(components[3]))
+                    let controller = PaymentConfirmationController(paymentConfirmation: paymentConfirmation)
+                    let fullScreenNavController = UINavigationController(rootViewController: controller)
+                    fullScreenNavController.modalPresentationStyle = .fullScreen
+                    
+                    // Present the full screen navigation controller modally
+                    present(fullScreenNavController, animated: true, completion: nil)
+                } else {
+                    // QR code format is not as expected
+                    return
+                }
             }
         }
     }
