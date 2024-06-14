@@ -46,11 +46,20 @@ class HomeAccountController: UIViewController {
         return label
     }()
     
-    private lazy var viewSpaceRight: UIView = {
-        let view = UIView()
-        view.backgroundColor = .clear
-        view.setContentHuggingPriority(.defaultLow, for: .horizontal)
-        return view
+    private lazy var stackViewOther: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .horizontal
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        return stackView
+    }()
+    
+    private lazy var labelOtherCaseStudy: UILabel = {
+        let label = UILabel()
+        label.text = "Other Case Study"
+        label.textColor = .orange
+        label.font = .systemFont(ofSize: 12, weight: .regular)
+        label.addTapAction(self, action: #selector(onOtherCaseStudyTapped))
+        return label
     }()
     
     private lazy var stackViewCardAccount: UIStackView = {
@@ -158,11 +167,19 @@ class HomeAccountController: UIViewController {
     func setupView() {
         containerView.addArrangedSubview(contentView)
         
-        contentView.addArrangedSubViews(views: [stackViewHeader, stackViewCardAccount, viewSpacerBottom])
-        stackViewHeader.addArrangedSubViews(views: [labelHeader, viewSpaceRight])
+        contentView.addArrangedSubViews(views: [stackViewHeader, stackViewCardAccount, stackViewOther, viewSpacerBottom])
+        stackViewOther.addArrangedSubViews(views: [StackViewHelpers.getSpacerH(), labelOtherCaseStudy])
+        stackViewHeader.addArrangedSubViews(views: [labelHeader, StackViewHelpers.getSpacerH()])
         stackViewCardAccount.addArrangedSubViews(views: [labelBalance, viewLineSpacer, stackViewBalance, labelCardNumber, labelNumber])
         stackViewCardAccount.setCustomSpacing(8, after: labelCardNumber)
         stackViewBalance.addArrangedSubViews(views: [labelRp, labelAmount])
+    }
+    
+    // MARK: - ACTION
+    
+    @objc func onOtherCaseStudyTapped(_ sender: Any) {
+        let controller = HomepageViewController()
+        UIApplication.setRootView(controller)
     }
     
 }

@@ -123,5 +123,8 @@ class PaymentCompletionController: UIViewController {
            
         isbuttonProcessing = true
         self.dismissAllViewControllers()
+        if let tabViewController = UIApplication.shared.windows.first?.rootViewController as? MainTabCaseStudy1Controller {
+            tabViewController.selectedIndex = 0 // Show Home
+        }
     }
 }

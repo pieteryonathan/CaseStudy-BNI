@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "PromoListController.showData():PromoListController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "print(presenter.promos.first?.name)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in PaymentConfirmationController.onPayTapped(_:):PaymentConfirmationController.swift">
          <PersistentStrings>
             <PersistentString
