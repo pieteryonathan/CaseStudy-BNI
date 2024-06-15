@@ -36,7 +36,7 @@ class PromoCell: UITableViewCell {
     
     private lazy var imageViewPromo: UIImageView = {
         let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
+        imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.clipsToBounds = true
         imageView.heightAnchor.constraint(equalToConstant: 160).isActive = true

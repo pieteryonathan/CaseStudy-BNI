@@ -26,7 +26,7 @@ class HomepageViewController: UIViewController {
         view.setContentHuggingPriority(.defaultHigh, for: .vertical)
         return view
     }()
-       
+    
     private lazy var buttonCaseStudy1: PrimaryButton = {
         let buttonX = PrimaryButton()
         buttonX.setData(title: "Case Study 1", buttonColor: .orange)
@@ -83,7 +83,8 @@ class HomepageViewController: UIViewController {
     }
     
     @objc private func onCaseStudy2Tapped(_ sender: Any) {
-        let controller = PromoListController()
-        UIApplication.setRootView(controller)
+        let promoListController = PromoListController()
+        let navigationController = UINavigationController(rootViewController: promoListController)
+        UIApplication.setRootView(navigationController)
     }
 }

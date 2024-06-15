@@ -135,54 +135,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A82BF259-AA93-4268-9299-9AA41B61C8DF"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CaseStudy-BNI/Modules/Case Study 2/Promo List/PromoListController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
-            landmarkName = "showLoading()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "61DC84FE-2DC8-41D0-82B8-A06C120BA1E6"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CaseStudy-BNI/Modules/Case Study 2/Promo List/PromoListPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "fetchPromos(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1651D546-E460-42BF-8912-FED3BE9DDF9B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CaseStudy-BNI/Modules/Case Study 2/Promo List/PromoListPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "fetchPromos(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "DEFF7E6F-2589-4771-B742-6DCC2878A140"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -190,8 +142,8 @@
             filePath = "CaseStudy-BNI/Modules/Case Study 2/Promo List/PromoListController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
             landmarkName = "showError(error:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -215,48 +167,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9D3CBADA-4BCE-42B2-8E29-6C675A64DCF7"
-            shouldBeEnabled = "No"
+            uuid = "8795739E-D39D-4C54-B82A-24066115CA8E"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CaseStudy-BNI/Modules/Case Study 2/Promo List/PromoListPresenter.swift"
+            filePath = "CaseStudy-BNI/Modules/Case Study 2/Promo Detail/PromoDetailController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "refresh()"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "loadWebView()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "173F3D47-FAE9-4266-AD70-56D3EB77F81C"
-            shouldBeEnabled = "No"
+            uuid = "96564E44-E2A8-4A0A-B030-D6B6F3EE2C10"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CaseStudy-BNI/Modules/Case Study 2/Promo List/PromoListPresenter.swift"
+            filePath = "CaseStudy-BNI/Modules/Case Study 2/Promo Detail/PromoDetailController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "refresh()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "97458F11-3343-4872-861F-DF6117F7788C"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CaseStudy-BNI/Modules/Case Study 2/Promo List/PromoListPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "refresh()"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "loadWebView()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

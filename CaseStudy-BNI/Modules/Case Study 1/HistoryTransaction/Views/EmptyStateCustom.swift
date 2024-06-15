@@ -36,7 +36,7 @@ class EmptyStateCustom: UITableViewCell {
         return imageViewX
     }()
     
-    private lazy var labelTitle: UILabel = {
+    public lazy var labelTitle: UILabel = {
         let labelX = UILabel()
         labelX.font = .systemFont(ofSize: 18, weight: .semibold)
         labelX.textColor = .black

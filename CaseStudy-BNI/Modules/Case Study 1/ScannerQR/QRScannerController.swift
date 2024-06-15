@@ -304,8 +304,6 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
                     let controller = PaymentConfirmationController(paymentConfirmation: paymentConfirmation)
                     let fullScreenNavController = UINavigationController(rootViewController: controller)
                     fullScreenNavController.modalPresentationStyle = .fullScreen
-                    
-                    // Present the full screen navigation controller modally
                     present(fullScreenNavController, animated: true, completion: nil)
                 } else {
                     // QR code format is not as expected

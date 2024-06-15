@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7C12B1BABB245CE74DC53F64 /* Pods_CaseStudy_BNI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4B8786DFACFF3CC59A3AAE /* Pods_CaseStudy_BNI.framework */; };
+		971AF99E2C1DCEBB00D28695 /* PromoListPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971AF99D2C1DCEBB00D28695 /* PromoListPresenterTest.swift */; };
+		971AF9A02C1DD18D00D28695 /* PromoListControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971AF99F2C1DD18D00D28695 /* PromoListControllerTest.swift */; };
+		9739ED862C1D59EB00C2EAC0 /* PromoDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9739ED852C1D59EB00C2EAC0 /* PromoDetailController.swift */; };
+		9739ED952C1D719400C2EAC0 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9739ED942C1D719400C2EAC0 /* MockURLSession.swift */; };
 		975314E52C1B172300F2E257 /* PaymentCompletionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314E42C1B172300F2E257 /* PaymentCompletionController.swift */; };
 		975314E92C1B1ECC00F2E257 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314E82C1B1ECC00F2E257 /* UIViewControllerExtensions.swift */; };
 		975314EB2C1B31A000F2E257 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314EA2C1B31A000F2E257 /* Account.swift */; };
@@ -15,7 +19,7 @@
 		975314F22C1B4AAC00F2E257 /* EmptyStateCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314F12C1B4AAC00F2E257 /* EmptyStateCustom.swift */; };
 		975314F42C1B4D0A00F2E257 /* TransactionHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314F32C1B4D0A00F2E257 /* TransactionHistory.swift */; };
 		975314F62C1B4E6600F2E257 /* FormattingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314F52C1B4E6600F2E257 /* FormattingHelper.swift */; };
-		975314FF2C1B5D7F00F2E257 /* CaseStudy_BNITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314FE2C1B5D7F00F2E257 /* CaseStudy_BNITests.swift */; };
+		975314FF2C1B5D7F00F2E257 /* CaseStudy1UnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314FE2C1B5D7F00F2E257 /* CaseStudy1UnitTest.swift */; };
 		97F7CB6D2C19C84B005F9AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7CB6C2C19C84B005F9AAD /* AppDelegate.swift */; };
 		97F7CB6F2C19C84B005F9AAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7CB6E2C19C84B005F9AAD /* SceneDelegate.swift */; };
 		97F7CB712C19C84B005F9AAD /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7CB702C19C84B005F9AAD /* HomepageViewController.swift */; };
@@ -54,6 +58,10 @@
 
 /* Begin PBXFileReference section */
 		8753B6A5609735D3D7D39A2F /* Pods-CaseStudy-BNI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaseStudy-BNI.debug.xcconfig"; path = "Target Support Files/Pods-CaseStudy-BNI/Pods-CaseStudy-BNI.debug.xcconfig"; sourceTree = "<group>"; };
+		971AF99D2C1DCEBB00D28695 /* PromoListPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoListPresenterTest.swift; sourceTree = "<group>"; };
+		971AF99F2C1DD18D00D28695 /* PromoListControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoListControllerTest.swift; sourceTree = "<group>"; };
+		9739ED852C1D59EB00C2EAC0 /* PromoDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoDetailController.swift; sourceTree = "<group>"; };
+		9739ED942C1D719400C2EAC0 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		975314E42C1B172300F2E257 /* PaymentCompletionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCompletionController.swift; sourceTree = "<group>"; };
 		975314E82C1B1ECC00F2E257 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		975314EA2C1B31A000F2E257 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
@@ -62,7 +70,7 @@
 		975314F32C1B4D0A00F2E257 /* TransactionHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistory.swift; sourceTree = "<group>"; };
 		975314F52C1B4E6600F2E257 /* FormattingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattingHelper.swift; sourceTree = "<group>"; };
 		975314FC2C1B5D7F00F2E257 /* CaseStudy-BNITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CaseStudy-BNITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		975314FE2C1B5D7F00F2E257 /* CaseStudy_BNITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStudy_BNITests.swift; sourceTree = "<group>"; };
+		975314FE2C1B5D7F00F2E257 /* CaseStudy1UnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStudy1UnitTest.swift; sourceTree = "<group>"; };
 		97F7CB692C19C84B005F9AAD /* CaseStudy-BNI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CaseStudy-BNI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97F7CB6C2C19C84B005F9AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97F7CB6E2C19C84B005F9AAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +128,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9739ED842C1D597E00C2EAC0 /* Promo Detail */ = {
+			isa = PBXGroup;
+			children = (
+				9739ED852C1D59EB00C2EAC0 /* PromoDetailController.swift */,
+			);
+			path = "Promo Detail";
+			sourceTree = "<group>";
+		};
+		9739ED8C2C1D6EEB00C2EAC0 /* Case Study 1 */ = {
+			isa = PBXGroup;
+			children = (
+				975314FE2C1B5D7F00F2E257 /* CaseStudy1UnitTest.swift */,
+			);
+			path = "Case Study 1";
+			sourceTree = "<group>";
+		};
+		9739ED8D2C1D6F3300C2EAC0 /* Case Study 2 */ = {
+			isa = PBXGroup;
+			children = (
+				971AF99D2C1DCEBB00D28695 /* PromoListPresenterTest.swift */,
+				971AF99F2C1DD18D00D28695 /* PromoListControllerTest.swift */,
+			);
+			path = "Case Study 2";
+			sourceTree = "<group>";
+		};
 		975314E32C1B15F000F2E257 /* PaymentCompletion */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,7 +173,8 @@
 		975314FD2C1B5D7F00F2E257 /* CaseStudy-BNITests */ = {
 			isa = PBXGroup;
 			children = (
-				975314FE2C1B5D7F00F2E257 /* CaseStudy_BNITests.swift */,
+				9739ED8C2C1D6EEB00C2EAC0 /* Case Study 1 */,
+				9739ED8D2C1D6F3300C2EAC0 /* Case Study 2 */,
 			);
 			path = "CaseStudy-BNITests";
 			sourceTree = "<group>";
@@ -309,6 +343,7 @@
 			children = (
 				97F7CBA92C1A1153005F9AAD /* StackViewHelpers.swift */,
 				975314F52C1B4E6600F2E257 /* FormattingHelper.swift */,
+				9739ED942C1D719400C2EAC0 /* MockURLSession.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -316,6 +351,7 @@
 		97FA47412C1C8CB500DA811A /* Case Study 2 */ = {
 			isa = PBXGroup;
 			children = (
+				9739ED842C1D597E00C2EAC0 /* Promo Detail */,
 				97FA47442C1C910500DA811A /* Promo List */,
 			);
 			path = "Case Study 2";
@@ -492,7 +528,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				975314FF2C1B5D7F00F2E257 /* CaseStudy_BNITests.swift in Sources */,
+				971AF99E2C1DCEBB00D28695 /* PromoListPresenterTest.swift in Sources */,
+				975314FF2C1B5D7F00F2E257 /* CaseStudy1UnitTest.swift in Sources */,
+				971AF9A02C1DD18D00D28695 /* PromoListControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +540,7 @@
 			files = (
 				97FA474C2C1C95FB00DA811A /* Promo.swift in Sources */,
 				97F7CB892C19D61E005F9AAD /* Button.swift in Sources */,
+				9739ED862C1D59EB00C2EAC0 /* PromoDetailController.swift in Sources */,
 				97F7CB712C19C84B005F9AAD /* HomepageViewController.swift in Sources */,
 				97F7CB982C19DF45005F9AAD /* HomeAccountController.swift in Sources */,
 				975314F02C1B499400F2E257 /* TransactionHistoryCell.swift in Sources */,
@@ -523,6 +562,7 @@
 				97F7CBA62C1A075C005F9AAD /* PaymentConfirmation.swift in Sources */,
 				975314F62C1B4E6600F2E257 /* FormattingHelper.swift in Sources */,
 				975314E52C1B172300F2E257 /* PaymentCompletionController.swift in Sources */,
+				9739ED952C1D719400C2EAC0 /* MockURLSession.swift in Sources */,
 				97F7CB942C19DEC5005F9AAD /* ScannerQRController.swift in Sources */,
 				97F7CB9A2C19DF73005F9AAD /* HistoryTransactionController.swift in Sources */,
 				97F7CB6D2C19C84B005F9AAD /* AppDelegate.swift in Sources */,

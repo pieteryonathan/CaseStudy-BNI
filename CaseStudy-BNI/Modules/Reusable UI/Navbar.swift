@@ -106,3 +106,28 @@ class NavbarBacknClose: NavbarBack {
         self.dismissAllViewControllers()
     }
 }
+
+class NavbarBackTitle: NavbarBack {
+    
+    private lazy var labelTitle: UILabel = {
+        let labelTitle = UILabel()
+        labelTitle.textAlignment = .center
+        labelTitle.textColor = .black
+        labelTitle.text = "Title"
+        labelTitle.font = .systemFont(ofSize: 24, weight: .bold)
+        return labelTitle
+    }()
+    
+    
+    override func setupView() {
+        containerView.addArrangedSubViews(views: [stackViewNavBar])
+        stackViewNavBar.addArrangedSubViews(views: [imageViewBack, labelTitle, StackViewHelpers.getSpacerH()])
+        stackViewNavBar.insertArrangedSubview(labelTitle, belowArrangedSubview: imageViewBack)
+        stackViewNavBar.setCustomSpacing(32, after: imageViewBack)
+    }
+    
+    public func setTitle(title: String) {
+        labelTitle.text = title
+    }
+    
+}

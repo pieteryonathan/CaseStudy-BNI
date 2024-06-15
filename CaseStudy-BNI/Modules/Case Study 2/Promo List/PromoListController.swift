@@ -40,14 +40,14 @@ class PromoListController: UIViewController {
         return label
     }()
     
-    private lazy var viewLoading: UIView = {
+    public lazy var viewLoading: UIView = {
         let view = UIView()
         view.backgroundColor = .clear
         view.setContentHuggingPriority(.defaultLow, for: .vertical)
         return view
     }()
     
-    private lazy var tableView: UITableView = {
+     public lazy var tableViewPromo: UITableView = {
         let view = UITableView()
         view.delegate = self
         view.backgroundColor = .white
@@ -59,11 +59,34 @@ class PromoListController: UIViewController {
         return view
     }()
     
+    private lazy var stackViewOtherCaseStudy: UIStackView = {
+        let view = UIStackView()
+        view.axis = .horizontal
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.insetsLayoutMarginsFromSafeArea = false
+        view.isLayoutMarginsRelativeArrangement = true
+        view.layoutMargins = .init(top: 0, left: 24, bottom: 0, right: 24)
+        return view
+    }()
+    
+    private lazy var labelOtherCaseStudy: UILabel = {
+        let label = UILabel()
+        label.text = "Other Case Study"
+        label.textAlignment = .right
+        label.textColor = .orange
+        label.font = .systemFont(ofSize: 12, weight: .regular)
+        label.addTapAction(self, action: #selector(onOtherCaseStudyTapped))
+        return label
+    }()
+    
     // MARK: - VARIABLE DECLARATION
-    let presenter = PromoListPresenter()
+    var presenter = PromoListPresenter()
     var isLoading = true { didSet {
         setStateLoading()
+        isDefault = isLoading
     }}
+    var isDefault: Bool = true
+    var isError = false
     
     // MARK: - OVERRIDE
     
@@ -80,31 +103,44 @@ class PromoListController: UIViewController {
     // MARK: - SETUP
     
     private func setupView() {
-        containerView.addArrangedSubViews(views: [stackViewHeader, viewLoading ,tableView])
+        containerView.addArrangedSubViews(views: [stackViewHeader, viewLoading , tableViewPromo, stackViewOtherCaseStudy])
+        stackViewOtherCaseStudy.addArrangedSubViews(views: [StackViewHelpers.getSpacerH(), labelOtherCaseStudy])
         stackViewHeader.addArrangedSubview(labelHeader)
     }
     
     private func setStateLoading() {
         viewLoading.isHidden = !isLoading
-        tableView.isHidden = isLoading
+        tableViewPromo.isHidden = isLoading
+    }
+    
+    // MARK: - ACTION
+    
+    @objc func onOtherCaseStudyTapped(_ sender: Any) {
+        let controller = HomepageViewController()
+        UIApplication.setRootView(controller)
     }
 }
 
 extension PromoListController: UITableViewDataSource, UITableViewDelegate {
         
     func getEmptyStateCell(_ indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "EmptyStateCustom", for: indexPath) as! EmptyStateCustom
+        let cell = tableViewPromo.dequeueReusableCell(withIdentifier: "EmptyStateCustom", for: indexPath) as! EmptyStateCustom
         cell.selectionStyle = .none
         cell.isUserInteractionEnabled = false
         cell.setData(image: UIImage(named: "ils_empty_state_transaction")!, title: "There is no promo", subTitle: "Waiting for the next promo")
-        cell.containerView.heightAnchor.constraint(equalToConstant: tableView.frame.size.height).isActive = true
+        cell.containerView.heightAnchor.constraint(equalToConstant: tableViewPromo.frame.size.height).isActive = true
         return cell
     }
     
     func getPromoCell(_ indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PromoCell", for: indexPath) as! PromoCell
+        let cell = tableViewPromo.dequeueReusableCell(withIdentifier: "PromoCell", for: indexPath) as! PromoCell
         cell.selectionStyle = .none
-        cell.setData(image: UIImage(named: "ils_empty_promo")!)
+        if indexPath.row < presenter.posters.count {
+            let poster = presenter.posters[indexPath.row]
+            cell.setData(image: UIImage(named: poster)!)
+        } else {
+            cell.setData(image: UIImage(named: "img_banner_promo_1")!)
+        }
         return cell
     }
     
@@ -119,6 +155,11 @@ extension PromoListController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return .leastNormalMagnitude // removes weird extra padding
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let promoDetailVC = PromoDetailController(promo: presenter.promos[indexPath.row])
+        navigationController?.pushViewController(promoDetailVC, animated: true)
+    }
         
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return UIView()
@@ -127,18 +168,24 @@ extension PromoListController: UITableViewDataSource, UITableViewDelegate {
 
 extension PromoListController: PromoListProtocol {
     func showLoading() {
+        isError = false
+        isLoading = true
         SVProgressHUD.show()
     }
     
     func showData() {
         SVProgressHUD.dismiss()
-        DispatchQueue.main.async { [unowned self] in
-            self.isLoading = false
-            self.tableView.reloadData()
+        isDefault = false
+        isError = false
+        DispatchQueue.main.async { [weak self] in
+            self?.tableViewPromo.reloadData()
+            self?.isLoading = false
         }
     }
     
     func showError(error: any Error) {
+        isLoading = false
+        isError = true
         SVProgressHUD.showError(withStatus: error.localizedDescription)
     }
 }
