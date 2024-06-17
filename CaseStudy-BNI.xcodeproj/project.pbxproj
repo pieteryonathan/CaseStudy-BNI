@@ -20,6 +20,7 @@
 		9748D2AA2C20AAB3007284FA /* PortfolioAccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748D2A92C20AAB3007284FA /* PortfolioAccountPresenter.swift */; };
 		9748D2AC2C20ABA5007284FA /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748D2AB2C20ABA5007284FA /* Chart.swift */; };
 		9748D2AE2C20AFC1007284FA /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748D2AD2C20AFC1007284FA /* TransactionCell.swift */; };
+		9748D2B02C20C205007284FA /* LineChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748D2AF2C20C205007284FA /* LineChartCell.swift */; };
 		975314E52C1B172300F2E257 /* PaymentCompletionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314E42C1B172300F2E257 /* PaymentCompletionController.swift */; };
 		975314E92C1B1ECC00F2E257 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314E82C1B1ECC00F2E257 /* UIViewControllerExtensions.swift */; };
 		975314EB2C1B31A000F2E257 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314EA2C1B31A000F2E257 /* Account.swift */; };
@@ -81,6 +82,7 @@
 		9748D2A92C20AAB3007284FA /* PortfolioAccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioAccountPresenter.swift; sourceTree = "<group>"; };
 		9748D2AB2C20ABA5007284FA /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
 		9748D2AD2C20AFC1007284FA /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		9748D2AF2C20C205007284FA /* LineChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartCell.swift; sourceTree = "<group>"; };
 		975314E42C1B172300F2E257 /* PaymentCompletionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCompletionController.swift; sourceTree = "<group>"; };
 		975314E82C1B1ECC00F2E257 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		975314EA2C1B31A000F2E257 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				9748D2A32C209408007284FA /* HeaderCategoryCell.swift */,
 				9748D2A52C209962007284FA /* PieChartCell.swift */,
 				9748D2AD2C20AFC1007284FA /* TransactionCell.swift */,
+				9748D2AF2C20C205007284FA /* LineChartCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -614,6 +617,7 @@
 				97F7CB9C2C19E121005F9AAD /* UIApllicationExtensions.swift in Sources */,
 				9748D2AA2C20AAB3007284FA /* PortfolioAccountPresenter.swift in Sources */,
 				97FA47432C1C910200DA811A /* PromoListController.swift in Sources */,
+				9748D2B02C20C205007284FA /* LineChartCell.swift in Sources */,
 				975314E92C1B1ECC00F2E257 /* UIViewControllerExtensions.swift in Sources */,
 				9748D29D2C208DAD007284FA /* PortfolioAccountController.swift in Sources */,
 				97F7CB8B2C19D90C005F9AAD /* NSLayoutConstraintExtensions.swift in Sources */,

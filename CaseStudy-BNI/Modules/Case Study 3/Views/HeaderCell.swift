@@ -50,6 +50,7 @@ class HeaderCell: UITableViewCell {
         let buttonA = tabBarButton()
         buttonA.setData(title: "Details")
         buttonA.isSelected = true
+        buttonA.clipsToBounds = true
         buttonA.addTapAction(self, action: #selector(buttonAPressed))
         return buttonA
     }()
@@ -58,12 +59,16 @@ class HeaderCell: UITableViewCell {
         let buttonB = tabBarButton()
         buttonB.setData(title: "Monthly")
         buttonB.isSelected = false
+        buttonB.clipsToBounds = true
         buttonB.addTapAction(self, action: #selector(buttonBPressed))
         return buttonB
     }()
     
     // MARK: - VARIABLE DECLARAION
-    var isSelectedA = true
+    var isSelectedA = true { didSet {
+        onValueChange?(isSelectedA)
+    }}
+    var onValueChange: ((_ selectedA: Bool) -> Void)?
 
     // MARK: - INIT
     
@@ -88,9 +93,11 @@ class HeaderCell: UITableViewCell {
         containerView.addArrangedSubViews(views: [stackViewHeader, stackTabBar])
         stackViewHeader.addArrangedSubViews(views: [labelHeader, StackViewHelpers.getSpacerH()])
         stackTabBar.addArrangedSubViews(views: [buttonA, buttonB])
+        let widthButton = (UIScreen.main.bounds.width - 48) / 2
+        let radius = widthButton / 14
         
-        buttonA.layer.cornerRadius = buttonA.frame.width / 2
-        buttonB.layer.cornerRadius = buttonB.frame.width / 2
+        buttonA.layer.cornerRadius = radius
+        buttonB.layer.cornerRadius = radius
     }
     
     public func setData(title: String) {

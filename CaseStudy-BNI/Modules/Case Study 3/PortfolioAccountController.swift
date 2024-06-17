@@ -45,6 +45,9 @@ class PortfolioAccountController: UIViewController {
     
     // MARK: - VARIABLE DECLARATOIN
     let presenter = PortfolioAccountPresenter()
+    var isSelectedDetails = true { didSet {
+        tableView.reloadData()
+    }}
     
     // MARK: - OVERRIDE
     
@@ -76,6 +79,9 @@ extension PortfolioAccountController: UITableViewDataSource, UITableViewDelegate
         
     func getHeaderCell(_ indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HeaderCell", for: indexPath) as! HeaderCell
+        cell.onValueChange = {[unowned self] isSelectedA in
+            self.isSelectedDetails = isSelectedA
+        }
         cell.setData(title: "Portfolio")
         cell.selectionStyle = .none
         return cell
@@ -128,7 +134,11 @@ extension PortfolioAccountController: UITableViewDataSource, UITableViewDelegate
         case .header:
             return getHeaderCell(indexPath)
         case .chart:
-            return getPieChartCell(indexPath)
+            if isSelectedDetails {
+                return getPieChartCell(indexPath)
+            } else {
+                return getLineChartCell(indexPath)
+            }
         case .history:
             if let (categoryIndex, transactionIndex) = presenter.transactionIndexForRow(indexPath.row) {
                 if transactionIndex == -1 {
