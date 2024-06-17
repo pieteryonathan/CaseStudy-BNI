@@ -97,7 +97,7 @@ class PaymentConfirmationController: UIViewController {
         return label
     }()
     
-    private lazy var labelIdTransaction: UILabel = {
+    public lazy var labelIdTransaction: UILabel = {
         let label = UILabel()
         label.text = "ID12345678"
         label.textColor = .black
@@ -140,7 +140,7 @@ class PaymentConfirmationController: UIViewController {
         return view
     }()
     
-    private lazy var labelToAcount: UILabel = {
+    public lazy var labelToAcount: UILabel = {
         let label = UILabel()
         label.text = "BNI"
         label.textColor = .black
@@ -148,7 +148,7 @@ class PaymentConfirmationController: UIViewController {
         return label
     }()
     
-    private lazy var labelNameMerchant: UILabel = {
+    public lazy var labelNameMerchant: UILabel = {
         let label = UILabel()
         label.text = "MERCHANT MOCK TEST"
         label.textColor = .black
@@ -187,7 +187,7 @@ class PaymentConfirmationController: UIViewController {
         return label
     }()
     
-    private lazy var labelAmount: UILabel = {
+    public lazy var labelAmount: UILabel = {
         let label = UILabel()
         label.text = "1.000.000"
         label.textColor = .black
@@ -211,7 +211,7 @@ class PaymentConfirmationController: UIViewController {
     
     // MARK: - VARIABLE DECLARATION
     private var paymentConfirmation: PaymentConfirmation
-    private var isPaymentProcessing = false
+    public var isPaymentProcessing = false
     
     // MARK: - INIT
     init(paymentConfirmation: PaymentConfirmation) {
@@ -252,7 +252,7 @@ class PaymentConfirmationController: UIViewController {
     }
     
     // MARK: - STATE
-    private func setState() {
+    public func setState() {
         labelToAcount.text = paymentConfirmation.nameBank
         labelNameMerchant.text = paymentConfirmation.nameOfMerchant
         labelAmount.text = FormattingHelper.addPeriods(to: paymentConfirmation.totalOfTransaction ?? 0)
@@ -261,7 +261,7 @@ class PaymentConfirmationController: UIViewController {
     
     // MARK: - ACTION
     
-    @objc private func onPayTapped(_ sender: Any) {
+    @objc public func onPayTapped(_ sender: Any) {
         guard !isPaymentProcessing else {
                return // Ignore tap if payment is already in progress
            }

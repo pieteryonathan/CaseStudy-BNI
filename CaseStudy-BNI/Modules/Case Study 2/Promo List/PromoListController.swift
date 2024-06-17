@@ -28,7 +28,7 @@ class PromoListController: UIViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.insetsLayoutMarginsFromSafeArea = false
         view.isLayoutMarginsRelativeArrangement = true
-        view.layoutMargins = .init(top: 24, left: 24, bottom: 24, right: 24)
+        view.layoutMargins = .init(top: 0, left: 24, bottom: 0, right: 24)
         return view
     }()
     

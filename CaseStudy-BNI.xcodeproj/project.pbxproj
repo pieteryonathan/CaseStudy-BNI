@@ -19,7 +19,10 @@
 		975314F22C1B4AAC00F2E257 /* EmptyStateCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314F12C1B4AAC00F2E257 /* EmptyStateCustom.swift */; };
 		975314F42C1B4D0A00F2E257 /* TransactionHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314F32C1B4D0A00F2E257 /* TransactionHistory.swift */; };
 		975314F62C1B4E6600F2E257 /* FormattingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314F52C1B4E6600F2E257 /* FormattingHelper.swift */; };
-		975314FF2C1B5D7F00F2E257 /* CaseStudy1UnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314FE2C1B5D7F00F2E257 /* CaseStudy1UnitTest.swift */; };
+		975314FF2C1B5D7F00F2E257 /* AccountTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314FE2C1B5D7F00F2E257 /* AccountTest.swift */; };
+		97F538DB2C20553D00A35438 /* QRScannerControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F538DA2C20553D00A35438 /* QRScannerControllerTests.swift */; };
+		97F538DF2C20615E00A35438 /* PaymentConfirmationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F538DE2C20615E00A35438 /* PaymentConfirmationControllerTests.swift */; };
+		97F538E32C206D3A00A35438 /* HistoryTransactionControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F538E22C206D3A00A35438 /* HistoryTransactionControllerTests.swift */; };
 		97F7CB6D2C19C84B005F9AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7CB6C2C19C84B005F9AAD /* AppDelegate.swift */; };
 		97F7CB6F2C19C84B005F9AAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7CB6E2C19C84B005F9AAD /* SceneDelegate.swift */; };
 		97F7CB712C19C84B005F9AAD /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7CB702C19C84B005F9AAD /* HomepageViewController.swift */; };
@@ -70,7 +73,10 @@
 		975314F32C1B4D0A00F2E257 /* TransactionHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistory.swift; sourceTree = "<group>"; };
 		975314F52C1B4E6600F2E257 /* FormattingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattingHelper.swift; sourceTree = "<group>"; };
 		975314FC2C1B5D7F00F2E257 /* CaseStudy-BNITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CaseStudy-BNITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		975314FE2C1B5D7F00F2E257 /* CaseStudy1UnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStudy1UnitTest.swift; sourceTree = "<group>"; };
+		975314FE2C1B5D7F00F2E257 /* AccountTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTest.swift; sourceTree = "<group>"; };
+		97F538DA2C20553D00A35438 /* QRScannerControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerControllerTests.swift; sourceTree = "<group>"; };
+		97F538DE2C20615E00A35438 /* PaymentConfirmationControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentConfirmationControllerTests.swift; sourceTree = "<group>"; };
+		97F538E22C206D3A00A35438 /* HistoryTransactionControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTransactionControllerTests.swift; sourceTree = "<group>"; };
 		97F7CB692C19C84B005F9AAD /* CaseStudy-BNI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CaseStudy-BNI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97F7CB6C2C19C84B005F9AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97F7CB6E2C19C84B005F9AAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,7 +145,10 @@
 		9739ED8C2C1D6EEB00C2EAC0 /* Case Study 1 */ = {
 			isa = PBXGroup;
 			children = (
-				975314FE2C1B5D7F00F2E257 /* CaseStudy1UnitTest.swift */,
+				975314FE2C1B5D7F00F2E257 /* AccountTest.swift */,
+				97F538DA2C20553D00A35438 /* QRScannerControllerTests.swift */,
+				97F538DE2C20615E00A35438 /* PaymentConfirmationControllerTests.swift */,
+				97F538E22C206D3A00A35438 /* HistoryTransactionControllerTests.swift */,
 			);
 			path = "Case Study 1";
 			sourceTree = "<group>";
@@ -529,7 +538,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				971AF99E2C1DCEBB00D28695 /* PromoListPresenterTest.swift in Sources */,
-				975314FF2C1B5D7F00F2E257 /* CaseStudy1UnitTest.swift in Sources */,
+				97F538E32C206D3A00A35438 /* HistoryTransactionControllerTests.swift in Sources */,
+				97F538DB2C20553D00A35438 /* QRScannerControllerTests.swift in Sources */,
+				975314FF2C1B5D7F00F2E257 /* AccountTest.swift in Sources */,
+				97F538DF2C20615E00A35438 /* PaymentConfirmationControllerTests.swift in Sources */,
 				971AF9A02C1DD18D00D28695 /* PromoListControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

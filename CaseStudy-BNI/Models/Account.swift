@@ -8,7 +8,12 @@
 import Foundation
 import SVProgressHUD
 
-public class Account {
+protocol AccountProtocol {
+    static func withdraw(amount: Int, completion: @escaping (Bool) -> Void)
+    static var transactionHistory: [TransactionHistory] { get set }
+}
+
+public class Account: AccountProtocol {
     
     static var balance: Int = 100000
     static var transactionHistory: [TransactionHistory] = [] { didSet {

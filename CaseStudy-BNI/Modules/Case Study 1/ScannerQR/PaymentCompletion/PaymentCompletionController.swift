@@ -103,7 +103,7 @@ class PaymentCompletionController: UIViewController {
         
     // MARK: - ACTION
     
-    @objc func buttonAPressed(_ sender: UIButton) {
+    @objc func buttonAPressed(_ sender: Any) {
         guard !isbuttonProcessing else {
                return // Ignore tap if button is already in progress
            }
@@ -114,9 +114,9 @@ class PaymentCompletionController: UIViewController {
         if let tabViewController = UIApplication.shared.windows.first?.rootViewController as? MainTabCaseStudy1Controller {
             tabViewController.selectedIndex = 2 // Show History
         }
-        
     }
-    @objc func buttonBPressed(_ sender: UIButton) {
+    
+    @objc func buttonBPressed(_ sender: Any) {
         guard !isbuttonProcessing else {
                return // Ignore tap if payment is already in progress
            }

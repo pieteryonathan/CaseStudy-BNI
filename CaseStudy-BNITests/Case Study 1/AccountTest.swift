@@ -1,5 +1,5 @@
 //
-//  CaseStudy1UnitTest.swift
+//  AccountTest.swift
 //  CaseStudy-BNITests
 //
 //  Created by Pieter Yonathan on 14/06/24.
@@ -8,7 +8,7 @@
 import XCTest
 @testable import CaseStudy_BNI
 
-final class CaseStudy1UnitTest: XCTestCase {
+final class AccountTest: XCTestCase {
     
     func testWithdraw() {
         // Given
