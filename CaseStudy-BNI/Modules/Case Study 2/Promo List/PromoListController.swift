@@ -177,10 +177,12 @@ extension PromoListController: PromoListProtocol {
         SVProgressHUD.dismiss()
         isDefault = false
         isError = false
-        DispatchQueue.main.async { [weak self] in
-            self?.tableViewPromo.reloadData()
-            self?.isLoading = false
-        }
+        self.isLoading = false
+        tableViewPromo.reloadData()
+//        DispatchQueue.main.async { [weak self] in
+//            self?.tableViewPromo.reloadData()
+//            self?.isLoading = false
+//        }
     }
     
     func showError(error: any Error) {

@@ -12,6 +12,14 @@
 		971AF9A02C1DD18D00D28695 /* PromoListControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971AF99F2C1DD18D00D28695 /* PromoListControllerTest.swift */; };
 		9739ED862C1D59EB00C2EAC0 /* PromoDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9739ED852C1D59EB00C2EAC0 /* PromoDetailController.swift */; };
 		9739ED952C1D719400C2EAC0 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9739ED942C1D719400C2EAC0 /* MockURLSession.swift */; };
+		9748D29D2C208DAD007284FA /* PortfolioAccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748D29C2C208DAD007284FA /* PortfolioAccountController.swift */; };
+		9748D2A02C208F61007284FA /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748D29F2C208F61007284FA /* HeaderCell.swift */; };
+		9748D2A42C209408007284FA /* HeaderCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748D2A32C209408007284FA /* HeaderCategoryCell.swift */; };
+		9748D2A62C209962007284FA /* PieChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748D2A52C209962007284FA /* PieChartCell.swift */; };
+		9748D2A82C20A443007284FA /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748D2A72C20A443007284FA /* UIColorExtension.swift */; };
+		9748D2AA2C20AAB3007284FA /* PortfolioAccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748D2A92C20AAB3007284FA /* PortfolioAccountPresenter.swift */; };
+		9748D2AC2C20ABA5007284FA /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748D2AB2C20ABA5007284FA /* Chart.swift */; };
+		9748D2AE2C20AFC1007284FA /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748D2AD2C20AFC1007284FA /* TransactionCell.swift */; };
 		975314E52C1B172300F2E257 /* PaymentCompletionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314E42C1B172300F2E257 /* PaymentCompletionController.swift */; };
 		975314E92C1B1ECC00F2E257 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314E82C1B1ECC00F2E257 /* UIViewControllerExtensions.swift */; };
 		975314EB2C1B31A000F2E257 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314EA2C1B31A000F2E257 /* Account.swift */; };
@@ -65,6 +73,14 @@
 		971AF99F2C1DD18D00D28695 /* PromoListControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoListControllerTest.swift; sourceTree = "<group>"; };
 		9739ED852C1D59EB00C2EAC0 /* PromoDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoDetailController.swift; sourceTree = "<group>"; };
 		9739ED942C1D719400C2EAC0 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		9748D29C2C208DAD007284FA /* PortfolioAccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioAccountController.swift; sourceTree = "<group>"; };
+		9748D29F2C208F61007284FA /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		9748D2A32C209408007284FA /* HeaderCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCategoryCell.swift; sourceTree = "<group>"; };
+		9748D2A52C209962007284FA /* PieChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartCell.swift; sourceTree = "<group>"; };
+		9748D2A72C20A443007284FA /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		9748D2A92C20AAB3007284FA /* PortfolioAccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioAccountPresenter.swift; sourceTree = "<group>"; };
+		9748D2AB2C20ABA5007284FA /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
+		9748D2AD2C20AFC1007284FA /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
 		975314E42C1B172300F2E257 /* PaymentCompletionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCompletionController.swift; sourceTree = "<group>"; };
 		975314E82C1B1ECC00F2E257 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		975314EA2C1B31A000F2E257 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
@@ -162,6 +178,27 @@
 			path = "Case Study 2";
 			sourceTree = "<group>";
 		};
+		9748D29B2C208C45007284FA /* Case Study 3 */ = {
+			isa = PBXGroup;
+			children = (
+				9748D29E2C208F54007284FA /* Views */,
+				9748D29C2C208DAD007284FA /* PortfolioAccountController.swift */,
+				9748D2A92C20AAB3007284FA /* PortfolioAccountPresenter.swift */,
+			);
+			path = "Case Study 3";
+			sourceTree = "<group>";
+		};
+		9748D29E2C208F54007284FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9748D29F2C208F61007284FA /* HeaderCell.swift */,
+				9748D2A32C209408007284FA /* HeaderCategoryCell.swift */,
+				9748D2A52C209962007284FA /* PieChartCell.swift */,
+				9748D2AD2C20AFC1007284FA /* TransactionCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		975314E32C1B15F000F2E257 /* PaymentCompletion */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +267,7 @@
 				97F7CB852C19D5BE005F9AAD /* Homepage */,
 				97F7CB8C2C19DB7A005F9AAD /* Case Study 1 */,
 				97FA47412C1C8CB500DA811A /* Case Study 2 */,
+				9748D29B2C208C45007284FA /* Case Study 3 */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -248,6 +286,7 @@
 			children = (
 				97F7CB8A2C19D90C005F9AAD /* NSLayoutConstraintExtensions.swift */,
 				97F7CB832C19D232005F9AAD /* UIStackViewExtensions.swift */,
+				9748D2A72C20A443007284FA /* UIColorExtension.swift */,
 				97F7CB9B2C19E121005F9AAD /* UIApllicationExtensions.swift */,
 				97F7CB9D2C19E205005F9AAD /* UIViewExtensions.swift */,
 				975314E82C1B1ECC00F2E257 /* UIViewControllerExtensions.swift */,
@@ -343,6 +382,7 @@
 				975314EA2C1B31A000F2E257 /* Account.swift */,
 				975314F32C1B4D0A00F2E257 /* TransactionHistory.swift */,
 				97FA474B2C1C95FB00DA811A /* Promo.swift */,
+				9748D2AB2C20ABA5007284FA /* Chart.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -550,7 +590,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9748D2AC2C20ABA5007284FA /* Chart.swift in Sources */,
+				9748D2A62C209962007284FA /* PieChartCell.swift in Sources */,
+				9748D2A42C209408007284FA /* HeaderCategoryCell.swift in Sources */,
 				97FA474C2C1C95FB00DA811A /* Promo.swift in Sources */,
+				9748D2A82C20A443007284FA /* UIColorExtension.swift in Sources */,
 				97F7CB892C19D61E005F9AAD /* Button.swift in Sources */,
 				9739ED862C1D59EB00C2EAC0 /* PromoDetailController.swift in Sources */,
 				97F7CB712C19C84B005F9AAD /* HomepageViewController.swift in Sources */,
@@ -568,8 +612,10 @@
 				97F7CB842C19D232005F9AAD /* UIStackViewExtensions.swift in Sources */,
 				97F7CB8F2C19DC64005F9AAD /* MainTabBarController.swift in Sources */,
 				97F7CB9C2C19E121005F9AAD /* UIApllicationExtensions.swift in Sources */,
+				9748D2AA2C20AAB3007284FA /* PortfolioAccountPresenter.swift in Sources */,
 				97FA47432C1C910200DA811A /* PromoListController.swift in Sources */,
 				975314E92C1B1ECC00F2E257 /* UIViewControllerExtensions.swift in Sources */,
+				9748D29D2C208DAD007284FA /* PortfolioAccountController.swift in Sources */,
 				97F7CB8B2C19D90C005F9AAD /* NSLayoutConstraintExtensions.swift in Sources */,
 				97F7CBA62C1A075C005F9AAD /* PaymentConfirmation.swift in Sources */,
 				975314F62C1B4E6600F2E257 /* FormattingHelper.swift in Sources */,
@@ -579,7 +625,9 @@
 				97F7CB9A2C19DF73005F9AAD /* HistoryTransactionController.swift in Sources */,
 				97F7CB6D2C19C84B005F9AAD /* AppDelegate.swift in Sources */,
 				97FA47462C1C935100DA811A /* PromoListPresenter.swift in Sources */,
+				9748D2AE2C20AFC1007284FA /* TransactionCell.swift in Sources */,
 				97F7CB6F2C19C84B005F9AAD /* SceneDelegate.swift in Sources */,
+				9748D2A02C208F61007284FA /* HeaderCell.swift in Sources */,
 				975314EB2C1B31A000F2E257 /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

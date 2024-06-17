@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Alamofire
 
 protocol PromoListProtocol {
     func showLoading()
@@ -31,32 +32,21 @@ class PromoListPresenter {
         
         let token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjc1OTE0MTUwLCJleHAiOjE2Nzg1MDYxNTB9.TcIgL5CDZYg9o8CUsSjUbbUdsYSaLutOWni88ZBs9S8"
         
-        var request = URLRequest(url: url)
-        request.httpMethod = "GET"
-        request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization") // Assuming Bearer token scheme
+        let headers: HTTPHeaders = [
+            "Authorization": "Bearer \(token)"
+        ]
         
-        let session = URLSession.shared
-        let task = session.dataTask(with: request) { data, response, error in
-            if let error = error {
-                completion(.failure(error))
-                return
-            }
-            
-            guard let data = data else {
-                let error = NSError(domain: "NoData", code: -1, userInfo: nil)
-                completion(.failure(error))
-                return
-            }
-            
-            do {
-                let decoder = JSONDecoder()
-                let promoResponse = try decoder.decode(PromoResponse.self, from: data)
+        AF.request(url, headers: headers).validate().responseDecodable(of: PromoResponse.self) { response in
+            debugPrint(response)
+            switch response.result {
+            case .success(let promoResponse):
+                print("Successfully fetched promos")
                 completion(.success(promoResponse.promos))
-            } catch {
+            case .failure(let error):
+                print("Request failed with error: \(error.localizedDescription)")
                 completion(.failure(error))
             }
         }
-        task.resume()
     }
     
     func refresh() {
@@ -66,40 +56,15 @@ class PromoListPresenter {
             switch result {
             case .success(let promos):
                 self.promos = promos
-                self.view?.showData()
+                DispatchQueue.main.async {
+                    self.view?.showData()
+                }
             case .failure(let failure):
-                self.view?.showError(error: failure)
+                print("Failed to fetch promos: \(failure.localizedDescription)")
+                DispatchQueue.main.async {
+                    self.view?.showError(error: failure)
+                }
             }
         }
-    }
-    
-    func fetchImage(from urlString: String, completion: @escaping (Result<UIImage, Error>) -> Void) {
-        guard let url = URL(string: urlString) else {
-            let error = NSError(domain: "InvalidURL", code: -1, userInfo: nil)
-            completion(.failure(error))
-            return
-        }
-        
-        let session = URLSession.shared
-        let task = session.dataTask(with: url) { data, response, error in
-            if let error = error {
-                completion(.failure(error))
-                return
-            }
-            
-            guard let data = data else {
-                let error = NSError(domain: "NoData", code: -1, userInfo: nil)
-                completion(.failure(error))
-                return
-            }
-            
-            if let image = UIImage(data: data) {
-                completion(.success(image))
-            } else {
-                let error = NSError(domain: "ImageConversion", code: -1, userInfo: nil)
-                completion(.failure(error))
-            }
-        }
-        task.resume()
     }
 }

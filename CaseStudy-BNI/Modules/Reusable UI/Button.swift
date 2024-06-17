@@ -9,7 +9,7 @@ import UIKit
 
 class PrimaryButton: UIView {
 
-    private lazy var containerView: UIStackView = {
+    public lazy var containerView: UIStackView = {
         let view = UIStackView()
         view.axis = .vertical
         view.alignment = .fill
@@ -24,7 +24,7 @@ class PrimaryButton: UIView {
         return view
     }()
     
-    private lazy var labelTitle: UILabel = {
+    public lazy var labelTitle: UILabel = {
         let labelX = UILabel()
         labelX.font = .systemFont(ofSize: 16, weight: .bold)
         labelX.textAlignment = .center
@@ -37,7 +37,7 @@ class PrimaryButton: UIView {
     
     // MARK: - VARIABLE DECLARATION
         
-    private var buttonColor: UIColor = .orange { didSet {
+    public var buttonColor: UIColor = .orange { didSet {
         setState()
     }}
     
@@ -57,7 +57,7 @@ class PrimaryButton: UIView {
         containerView.backgroundColor = buttonColor
     }
     
-    private func setupView() {
+    public func setupView() {
         containerView.addArrangedSubViews(views: [labelTitle])
     }
     
@@ -66,4 +66,35 @@ class PrimaryButton: UIView {
         labelTitle.textColor = textColor
         self.buttonColor = buttonColor
     }
+}
+
+class tabBarButton: PrimaryButton {
+    
+    var isSelected: Bool = false { didSet {
+        setStateSelected()
+    }}
+    
+    func setData(title: String) {
+        labelTitle.text = title
+    }
+    
+    func setStateSelected() {
+        if isSelected {
+            labelTitle.textColor = .white
+            buttonColor = .orange
+        } else {
+            labelTitle.textColor = .orange
+            buttonColor = .clear
+        }
+    }
+    
+    override func setupView() {
+        super.setupView()
+        
+        containerView.layer.cornerRadius = 0
+        containerView.layoutMargins = .init(top: 4, left: 4, bottom: 4, right: 4)
+        labelTitle.font = .systemFont(ofSize: 14, weight: .bold)
+
+    }
+    
 }

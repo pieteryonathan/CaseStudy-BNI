@@ -8,6 +8,8 @@ target 'CaseStudy-BNI' do
 
   pod 'FSPagerView' 
   pod 'SVProgressHUD'
+  pod 'Alamofire'
+  pod 'DGCharts'
 
 end
 

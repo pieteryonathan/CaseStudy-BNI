@@ -44,6 +44,7 @@ class HomepageViewController: UIViewController {
     private lazy var buttonCaseStudy3: PrimaryButton = {
         let buttonX = PrimaryButton()
         buttonX.setData(title: "Case Study 3", buttonColor: .orange)
+        buttonX.addTapAction(self, action: #selector(onCaseStudy3Tapped))
         return buttonX
     }()
     
@@ -85,6 +86,12 @@ class HomepageViewController: UIViewController {
     @objc private func onCaseStudy2Tapped(_ sender: Any) {
         let promoListController = PromoListController()
         let navigationController = UINavigationController(rootViewController: promoListController)
+        UIApplication.setRootView(navigationController)
+    }
+    
+    @objc private func onCaseStudy3Tapped(_ sender: Any) {
+        let portfolioController = PortfolioAccountController()
+        let navigationController = UINavigationController(rootViewController: portfolioController)
         UIApplication.setRootView(navigationController)
     }
 }
