@@ -194,36 +194,6 @@
             endingLineNumber = "68"
             landmarkName = "loadWebView()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "96564E44-E2A8-4A0A-B030-D6B6F3EE2C10 - dc0d061a1d444bd4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CaseStudy_BNI.PromoDetailController.loadWebView() -&gt; ()"
-                  moduleName = "CaseStudy-BNI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/piet/DocumentPiet/Case%20Study/CaseStudy-BNI-Repo/CaseStudy-BNI/Modules/Case%20Study%202/Promo%20Detail/PromoDetailController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "69"
-                  endingLineNumber = "69">
-               </Location>
-               <Location
-                  uuid = "96564E44-E2A8-4A0A-B030-D6B6F3EE2C10 - dc0d061a1d444bd4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CaseStudy_BNI.PromoDetailController.loadWebView() -&gt; ()"
-                  moduleName = "CaseStudy-BNI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/piet/DocumentPiet/Case%20Study/CaseStudy-BNI-Repo/CaseStudy-BNI/Modules/Case%20Study%202/Promo%20Detail/PromoDetailController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "69"
-                  endingLineNumber = "69">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -240,36 +210,6 @@
             endingLineNumber = "114"
             landmarkName = "buttonAPressed(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "244611EF-FDD2-4DBF-9A34-9645A74711A1 - 52e7a06f08546228"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CaseStudy_BNI.PaymentCompletionController.buttonAPressed(Any) -&gt; ()"
-                  moduleName = "CaseStudy-BNI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/piet/DocumentPiet/Case%20Study/CaseStudy-BNI-Repo/CaseStudy-BNI/Modules/Case%20Study%201/ScannerQR/PaymentCompletion/PaymentCompletionController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "114"
-                  endingLineNumber = "114">
-               </Location>
-               <Location
-                  uuid = "244611EF-FDD2-4DBF-9A34-9645A74711A1 - 52e7a06f08546228"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CaseStudy_BNI.PaymentCompletionController.buttonAPressed(Any) -&gt; ()"
-                  moduleName = "CaseStudy-BNI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/piet/DocumentPiet/Case%20Study/CaseStudy-BNI-Repo/CaseStudy-BNI/Modules/Case%20Study%201/ScannerQR/PaymentCompletion/PaymentCompletionController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "114"
-                  endingLineNumber = "114">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -301,6 +241,86 @@
             startingLineNumber = "115"
             endingLineNumber = "115"
             landmarkName = "buttonAPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4348992F-3328-45B4-B68C-1EF478107AF3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CaseStudy-BNI/Modules/Case Study 3/PortfolioAccountController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "getPieChartCell(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "28D01907-6E19-4132-B54F-86B06B87E53F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CaseStudy-BNI/Modules/Case Study 3/PortfolioAccountController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "getPieChartCell(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E8E80CFC-0B9F-499C-BF8D-2796A4175753"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CaseStudy-BNI/Modules/Case Study 3/PortfolioAccountController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "getPieChartCell(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "98D21561-F78E-4963-B856-0D42C39830D8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CaseStudy-BNI/Modules/Case Study 3/PortfolioAccountController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "getPieChartCell(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C23A30DF-D185-4432-9B85-E38F9B89044A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CaseStudy-BNI/Modules/Case Study 3/Views/PieChartCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "chartValueSelected(_:entry:highlight:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

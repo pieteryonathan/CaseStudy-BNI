@@ -31,6 +31,8 @@
 		975314FF2C1B5D7F00F2E257 /* AccountTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314FE2C1B5D7F00F2E257 /* AccountTest.swift */; };
 		97ECB7292C21387F00B537F0 /* PortfolioAccountPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ECB7282C21387F00B537F0 /* PortfolioAccountPresenterTests.swift */; };
 		97ECB72B2C21425700B537F0 /* PortfolioAccountControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ECB72A2C21425700B537F0 /* PortfolioAccountControllerTests.swift */; };
+		97ECB72D2C21447300B537F0 /* DetailTransactionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ECB72C2C21447300B537F0 /* DetailTransactionController.swift */; };
+		97ECB72F2C214F6000B537F0 /* DetailTransactionControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ECB72E2C214F6000B537F0 /* DetailTransactionControllerTests.swift */; };
 		97F538DB2C20553D00A35438 /* QRScannerControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F538DA2C20553D00A35438 /* QRScannerControllerTests.swift */; };
 		97F538DF2C20615E00A35438 /* PaymentConfirmationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F538DE2C20615E00A35438 /* PaymentConfirmationControllerTests.swift */; };
 		97F538E32C206D3A00A35438 /* HistoryTransactionControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F538E22C206D3A00A35438 /* HistoryTransactionControllerTests.swift */; };
@@ -96,6 +98,8 @@
 		975314FE2C1B5D7F00F2E257 /* AccountTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTest.swift; sourceTree = "<group>"; };
 		97ECB7282C21387F00B537F0 /* PortfolioAccountPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioAccountPresenterTests.swift; sourceTree = "<group>"; };
 		97ECB72A2C21425700B537F0 /* PortfolioAccountControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioAccountControllerTests.swift; sourceTree = "<group>"; };
+		97ECB72C2C21447300B537F0 /* DetailTransactionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionController.swift; sourceTree = "<group>"; };
+		97ECB72E2C214F6000B537F0 /* DetailTransactionControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransactionControllerTests.swift; sourceTree = "<group>"; };
 		97F538DA2C20553D00A35438 /* QRScannerControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerControllerTests.swift; sourceTree = "<group>"; };
 		97F538DE2C20615E00A35438 /* PaymentConfirmationControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentConfirmationControllerTests.swift; sourceTree = "<group>"; };
 		97F538E22C206D3A00A35438 /* HistoryTransactionControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTransactionControllerTests.swift; sourceTree = "<group>"; };
@@ -190,6 +194,7 @@
 				9748D29E2C208F54007284FA /* Views */,
 				9748D29C2C208DAD007284FA /* PortfolioAccountController.swift */,
 				9748D2A92C20AAB3007284FA /* PortfolioAccountPresenter.swift */,
+				97ECB72C2C21447300B537F0 /* DetailTransactionController.swift */,
 			);
 			path = "Case Study 3";
 			sourceTree = "<group>";
@@ -238,6 +243,7 @@
 			children = (
 				97ECB7282C21387F00B537F0 /* PortfolioAccountPresenterTests.swift */,
 				97ECB72A2C21425700B537F0 /* PortfolioAccountControllerTests.swift */,
+				97ECB72E2C214F6000B537F0 /* DetailTransactionControllerTests.swift */,
 			);
 			path = "Case Study 3";
 			sourceTree = "<group>";
@@ -602,6 +608,7 @@
 				975314FF2C1B5D7F00F2E257 /* AccountTest.swift in Sources */,
 				97F538DF2C20615E00A35438 /* PaymentConfirmationControllerTests.swift in Sources */,
 				971AF9A02C1DD18D00D28695 /* PromoListControllerTest.swift in Sources */,
+				97ECB72F2C214F6000B537F0 /* DetailTransactionControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +630,7 @@
 				97F7CBA32C1A06B0005F9AAD /* PaymentConfirmationController.swift in Sources */,
 				97F7CBA02C19F305005F9AAD /* QRScannerController.swift in Sources */,
 				97FA47492C1C93F200DA811A /* PromoCell.swift in Sources */,
+				97ECB72D2C21447300B537F0 /* DetailTransactionController.swift in Sources */,
 				975314F22C1B4AAC00F2E257 /* EmptyStateCustom.swift in Sources */,
 				97F7CB9E2C19E205005F9AAD /* UIViewExtensions.swift in Sources */,
 				97F7CB912C19DCFC005F9AAD /* MainTabCaseStudy1Controller.swift in Sources */,

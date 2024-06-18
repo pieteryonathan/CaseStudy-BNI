@@ -29,6 +29,9 @@ class PieChartCell: UITableViewCell {
         viewX.heightAnchor.constraint(equalToConstant: 320).isActive = true
         return viewX
     }()
+    
+    // MARK: - VARIABLE DECLARATION
+    var onChartTapped: ((_ labelValue: String) -> Void)?
 
     // MARK: - INIT
     
@@ -73,7 +76,6 @@ class PieChartCell: UITableViewCell {
         dataSet.valueFormatter = PercentValueFormatter()
         dataSet.valueTextColor = .black
         dataSet.entryLabelColor = .black
-        dataSet.valueFormatter = PercentValueFormatter()
         
         let data = PieChartData(dataSet: dataSet)
         viewPieChart.data = data
@@ -92,6 +94,10 @@ class PercentValueFormatter: NSObject, ValueFormatter {
 extension PieChartCell: ChartViewDelegate {
     
     func chartValueSelected(_ chartView: ChartViewBase, entry: ChartDataEntry, highlight: Highlight) {
-        
+        if let pieEntry = entry as? PieChartDataEntry {
+            let selectedLabel = pieEntry.label ?? ""
+            print("Selected label: \(selectedLabel)")
+            self.onChartTapped?(selectedLabel)
+        }
     }
 }

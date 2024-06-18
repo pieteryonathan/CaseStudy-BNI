@@ -3,6 +3,34 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "closure #1 in PaymentConfirmationController.onPayTapped(_:):PaymentConfirmationController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Account.balance">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PieChartCell.chartValueSelected(_:entry:highlight:):PieChartCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "entry?.label">
+            </PersistentString>
+            <PersistentString
+               value = "entry.label?.description">
+            </PersistentString>
+            <PersistentString
+               value = "entry.label">
+            </PersistentString>
+            <PersistentString
+               value = "entry.x.description">
+            </PersistentString>
+            <PersistentString
+               value = "entry.data">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "PromoListController.showData():PromoListController.swift">
          <PersistentStrings>
             <PersistentString
@@ -11,10 +39,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #1 in PaymentConfirmationController.onPayTapped(_:):PaymentConfirmationController.swift">
+         contextName = "closure #1 in PortfolioAccountController.getPieChartCell(_:):PortfolioAccountController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "Account.balance">
+               value = "presenter.donutChartData">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

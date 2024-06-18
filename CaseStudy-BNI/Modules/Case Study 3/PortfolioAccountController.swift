@@ -91,6 +91,15 @@ extension PortfolioAccountController: UITableViewDataSource, UITableViewDelegate
     func getPieChartCell(_ indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PieChartCell", for: indexPath) as! PieChartCell
         cell.setData(pieDatas: presenter.getDataPieChart())
+        cell.onChartTapped = {[unowned self] labelValue in
+            let chartData = presenter.donutChartData.first { $0.label == labelValue }
+            
+            if let chartData = chartData {
+                let detailTransaction = DetailTransactionController()
+                detailTransaction.setData(dataTransaction: chartData)
+                navigationController?.pushViewController(detailTransaction, animated: true)
+            }
+        }
         cell.selectionStyle = .none
         return cell
     }
