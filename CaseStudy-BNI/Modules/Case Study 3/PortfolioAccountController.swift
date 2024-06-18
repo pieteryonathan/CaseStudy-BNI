@@ -40,11 +40,12 @@ class PortfolioAccountController: UIViewController {
         view.register(HeaderCell.self, forCellReuseIdentifier: "HeaderCell")
         view.register(HeaderCategoryCell.self, forCellReuseIdentifier: "HeaderCategoryCell")
         view.register(PieChartCell.self, forCellReuseIdentifier: "PieChartCell")
+        view.register(LineChartCell.self, forCellReuseIdentifier: "LineChartCell")
         return view
     }()
     
     // MARK: - VARIABLE DECLARATOIN
-    let presenter = PortfolioAccountPresenter()
+    var presenter = PortfolioAccountPresenter()
     var isSelectedDetails = true { didSet {
         tableView.reloadData()
     }}
@@ -94,6 +95,13 @@ extension PortfolioAccountController: UITableViewDataSource, UITableViewDelegate
         return cell
     }
     
+    func getLineChartCell(_ indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LineChartCell", for: indexPath) as! LineChartCell
+        cell.selectionStyle = .none
+        cell.setData(chartData: presenter.getLineChartData())
+        return cell
+    }
+    
     func getHeaderCategoryCell(_ indexPath: IndexPath, categoryIndex: Int) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HeaderCategoryCell", for: indexPath) as! HeaderCategoryCell
         cell.setTitle(presenter.donutChartData[categoryIndex].label)
@@ -105,8 +113,10 @@ extension PortfolioAccountController: UITableViewDataSource, UITableViewDelegate
         guard let transactionIndex = transactionIndex else {
             return UITableViewCell()
         }
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionCell", for: indexPath) as! TransactionCell
-        let data = presenter.donutChartData.flatMap { $0.data }[transactionIndex]
+        let (categoryIndex, _) = presenter.transactionIndexForRow(indexPath.row)!
+        let data = presenter.donutChartData[categoryIndex].data[transactionIndex]
         cell.setData(transaction: data)
         cell.selectionStyle = .none
         return cell

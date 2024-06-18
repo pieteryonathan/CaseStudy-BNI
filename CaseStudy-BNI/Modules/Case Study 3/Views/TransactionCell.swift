@@ -95,7 +95,7 @@ class TransactionCell: UITableViewCell {
         labelTotal.text = nil
         labelStatus.text = nil
         
-        labelTotal.text = "RP \(FormattingHelper.addPeriods(to: transaction.nominal))"
+        labelTotal.text = "Rp \(FormattingHelper.addPeriods(to: transaction.nominal))"
         labelStatus.text = transaction.trxDate
     }
 }

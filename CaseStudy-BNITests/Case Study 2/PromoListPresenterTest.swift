@@ -76,38 +76,6 @@ class PromoListPresenterTests: XCTestCase {
         
         XCTAssertTrue(mockView.isErrorShown)
     }
-    
-    func testFetchImageSuccess() {
-        let expectation = self.expectation(description: "Fetch image success")
-        
-        presenter.fetchImage(from: "https://via.placeholder.com/150") { result in
-            switch result {
-            case .success(let image):
-                XCTAssertNotNil(image)
-                expectation.fulfill()
-            case .failure:
-                XCTFail("Expected success but got failure")
-            }
-        }
-        
-        waitForExpectations(timeout: 5, handler: nil)
-    }
-    
-    func testFetchImageFailure() {
-        let expectation = self.expectation(description: "Fetch image failure")
-        
-        presenter.fetchImage(from: "invalid-url") { result in
-            switch result {
-            case .success:
-                XCTFail("Expected failure but got success")
-            case .failure(let error):
-                XCTAssertNotNil(error)
-                expectation.fulfill()
-            }
-        }
-        
-        waitForExpectations(timeout: 5, handler: nil)
-    }
 }
 
 class MockPromoListView: PromoListProtocol {

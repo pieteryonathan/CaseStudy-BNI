@@ -29,6 +29,8 @@
 		975314F42C1B4D0A00F2E257 /* TransactionHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314F32C1B4D0A00F2E257 /* TransactionHistory.swift */; };
 		975314F62C1B4E6600F2E257 /* FormattingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314F52C1B4E6600F2E257 /* FormattingHelper.swift */; };
 		975314FF2C1B5D7F00F2E257 /* AccountTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975314FE2C1B5D7F00F2E257 /* AccountTest.swift */; };
+		97ECB7292C21387F00B537F0 /* PortfolioAccountPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ECB7282C21387F00B537F0 /* PortfolioAccountPresenterTests.swift */; };
+		97ECB72B2C21425700B537F0 /* PortfolioAccountControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ECB72A2C21425700B537F0 /* PortfolioAccountControllerTests.swift */; };
 		97F538DB2C20553D00A35438 /* QRScannerControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F538DA2C20553D00A35438 /* QRScannerControllerTests.swift */; };
 		97F538DF2C20615E00A35438 /* PaymentConfirmationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F538DE2C20615E00A35438 /* PaymentConfirmationControllerTests.swift */; };
 		97F538E32C206D3A00A35438 /* HistoryTransactionControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F538E22C206D3A00A35438 /* HistoryTransactionControllerTests.swift */; };
@@ -92,6 +94,8 @@
 		975314F52C1B4E6600F2E257 /* FormattingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattingHelper.swift; sourceTree = "<group>"; };
 		975314FC2C1B5D7F00F2E257 /* CaseStudy-BNITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CaseStudy-BNITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		975314FE2C1B5D7F00F2E257 /* AccountTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTest.swift; sourceTree = "<group>"; };
+		97ECB7282C21387F00B537F0 /* PortfolioAccountPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioAccountPresenterTests.swift; sourceTree = "<group>"; };
+		97ECB72A2C21425700B537F0 /* PortfolioAccountControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioAccountControllerTests.swift; sourceTree = "<group>"; };
 		97F538DA2C20553D00A35438 /* QRScannerControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerControllerTests.swift; sourceTree = "<group>"; };
 		97F538DE2C20615E00A35438 /* PaymentConfirmationControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentConfirmationControllerTests.swift; sourceTree = "<group>"; };
 		97F538E22C206D3A00A35438 /* HistoryTransactionControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTransactionControllerTests.swift; sourceTree = "<group>"; };
@@ -224,8 +228,18 @@
 			children = (
 				9739ED8C2C1D6EEB00C2EAC0 /* Case Study 1 */,
 				9739ED8D2C1D6F3300C2EAC0 /* Case Study 2 */,
+				97ECB7272C21380300B537F0 /* Case Study 3 */,
 			);
 			path = "CaseStudy-BNITests";
+			sourceTree = "<group>";
+		};
+		97ECB7272C21380300B537F0 /* Case Study 3 */ = {
+			isa = PBXGroup;
+			children = (
+				97ECB7282C21387F00B537F0 /* PortfolioAccountPresenterTests.swift */,
+				97ECB72A2C21425700B537F0 /* PortfolioAccountControllerTests.swift */,
+			);
+			path = "Case Study 3";
 			sourceTree = "<group>";
 		};
 		97F7CB602C19C84B005F9AAD = {
@@ -582,6 +596,8 @@
 			files = (
 				971AF99E2C1DCEBB00D28695 /* PromoListPresenterTest.swift in Sources */,
 				97F538E32C206D3A00A35438 /* HistoryTransactionControllerTests.swift in Sources */,
+				97ECB72B2C21425700B537F0 /* PortfolioAccountControllerTests.swift in Sources */,
+				97ECB7292C21387F00B537F0 /* PortfolioAccountPresenterTests.swift in Sources */,
 				97F538DB2C20553D00A35438 /* QRScannerControllerTests.swift in Sources */,
 				975314FF2C1B5D7F00F2E257 /* AccountTest.swift in Sources */,
 				97F538DF2C20615E00A35438 /* PaymentConfirmationControllerTests.swift in Sources */,

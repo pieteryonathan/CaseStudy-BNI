@@ -107,30 +107,6 @@ class PortfolioAccountPresenter {
         return totalNominal
     }
     
-    func getTotalNominalForEachCategory() -> [String: Int] {
-        var categoryTotals: [String: Int] = [:]
-        
-        for category in donutChartData {
-            var totalNominal = 0
-            for transaction in category.data {
-                totalNominal += transaction.nominal
-            }
-            categoryTotals[category.label] = totalNominal
-        }
-        
-        return categoryTotals
-    }
-    
-    func getPercentageForEachCategory() -> [String: Double] {
-        var categoryPercentages: [String: Double] = [:]
-        
-        for category in donutChartData {
-            categoryPercentages[category.label] = category.percentage
-        }
-        
-        return categoryPercentages
-    }
-    
     func getDataPieChart() -> [String: (totalNominal: Int, percentage: Double)] {
         var categoryTotals: [String: (totalNominal: Int, percentage: Double)] = [:]
         
