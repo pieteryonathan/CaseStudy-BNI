@@ -30,7 +30,18 @@ class PieChartCell: UITableViewCell {
         return viewX
     }()
     
+    private lazy var labelOtherCaseStudy: UILabel = {
+        let label = UILabel()
+        label.text = "Other Case Study"
+        label.textAlignment = .right
+        label.textColor = .orange
+        label.font = .systemFont(ofSize: 12, weight: .regular)
+        label.addTapAction(self, action: #selector(onOtherCaseStudyTapped))
+        return label
+    }()
+    
     // MARK: - VARIABLE DECLARATION
+    var onTapOtherCaseStudy: (() -> Void)?
     var onChartTapped: ((_ labelValue: String) -> Void)?
 
     // MARK: - INIT
@@ -59,6 +70,7 @@ class PieChartCell: UITableViewCell {
         viewPieChart.data = nil
 
         containerView.addArrangedSubview(viewPieChart)
+        containerView.addArrangedSubview(labelOtherCaseStudy)
     }
 
     func setData(pieDatas: [String: (totalNominal: Int, percentage: Double)]) {
@@ -79,8 +91,14 @@ class PieChartCell: UITableViewCell {
         
         let data = PieChartData(dataSet: dataSet)
         viewPieChart.data = data
+        viewPieChart.entryLabelColor = .black
 //        viewPieChart.legend.enabled = false
         viewPieChart.animate(xAxisDuration: 1.5, easingOption: .easeOutCirc)
+    }
+    
+    // MARK: - ACTION
+    @objc func onOtherCaseStudyTapped(_ sender: Any) {
+        self.onTapOtherCaseStudy?()
     }
 }
 

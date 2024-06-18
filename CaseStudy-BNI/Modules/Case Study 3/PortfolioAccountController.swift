@@ -100,6 +100,10 @@ extension PortfolioAccountController: UITableViewDataSource, UITableViewDelegate
                 navigationController?.pushViewController(detailTransaction, animated: true)
             }
         }
+        cell.onTapOtherCaseStudy = {[unowned self] in
+            let controller = HomepageViewController()
+            UIApplication.setRootView(controller)
+        }
         cell.selectionStyle = .none
         return cell
     }
@@ -108,6 +112,13 @@ extension PortfolioAccountController: UITableViewDataSource, UITableViewDelegate
         let cell = tableView.dequeueReusableCell(withIdentifier: "LineChartCell", for: indexPath) as! LineChartCell
         cell.selectionStyle = .none
         cell.setData(chartData: presenter.getLineChartData())
+        cell.onTapChart = {[unowned self] index in
+            print(index)
+        }
+        cell.onTapOtherCaseStudy = {[unowned self] in
+            let controller = HomepageViewController()
+            UIApplication.setRootView(controller)
+        }
         return cell
     }
     
